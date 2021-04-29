@@ -3,9 +3,27 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Verdana;
 }
 
 div{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+header{
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#header-search-button{
+  height: 38px;
+  width: 38px;
+  padding: 5px;
+}
+
+

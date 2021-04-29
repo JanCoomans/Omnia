@@ -11,42 +11,75 @@
     <script src="./js/index.js"></script><!-- Edit as needed -->
 </head>
 <body>
-	<header id="header" class="container-fluid">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </header>
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-1"></div>
 
-    <section id="intro" class="container-fluid">
-        <div class="row justify-content-center">
-            <div id="container-logo" class="col-2">Logo</div>
-            <div class="col-8">
-            </div>
-        </div>
-    </section>
+        <div class="col-10 d-flex align-items-center justify-content-between">
+            <a href="./index.html">
+                <img class="py-1" height="100px" src="./img/omnia_logo.png" alt="Omnia logo">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <section id="explore" class="container-fluid">
-        <div class="row">
-            <div class="col"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="header-search-input"  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="header-search-button" class="btn bg-dark d-flex align-items-center justify-content-center" type="submit">
+                            <img src="./img/search_icon.png" alt="Search Icon">
+                        </button>
+                    </form>
+                </div>
+            </nav>
         </div>
-    </section>
+        <div class="col-1"></div>
+    </div>
+</header>
 
-    <section id="games" class="container-fluid">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </section>
+<section id="intro" class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</section>
 
-    <section id="event" class="container-fluid">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </section>
+<section id="explore" class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</section>
 
-    <footer id="footer" class="container-fluid fixed-bottom">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </footer>
+<section id="games" class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</section>
+
+<section id="event" class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</section>
+
+<footer id="footer" class="container-fluid fixed-bottom">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</footer>
 </body>
 </html>
