@@ -2,6 +2,7 @@
     --primary:#14213D;
     --secondary:#fca311;
     --tertiary:#e5e5e5;
+    --black:#000;
 }
 
 /* verander variabele voor focus / hover */
@@ -14,3 +15,7 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 
 .bg-tertiary{background-color: var(--tertiary)!important}
 a.bg-tertiary:focus,a.bg-tertiary:hover,button.bg-tertiary:focus,button.bg-tertiary:hover{background-color: var(--tertiary)!important}
+
+.bg-black{background-color: var(--black)!important}
+a.bg-black:focus,a.bg-tertiary:hover,button.bg-tertiary:focus,button.bg-tertiary:hover{background-color: var(--black)!important}
+
