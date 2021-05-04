@@ -12,6 +12,3 @@ header div[class^='col-'] *{
     padding: 5px;
 }
 
-#header-search-input{
-    display: none;
-}
