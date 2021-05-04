@@ -17,7 +17,6 @@ function toggleSearchBar() {
 
     function redirect(){
         let input = document.getElementById("header-search-input").value;
-        alert(input);
         document.location.href = "./" + input + ".html";
     }
 
