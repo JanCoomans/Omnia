@@ -1,0 +1,127 @@
+[33mcommit 34cd537958899a4327ff7279b1b1f2a2ff57cd28[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: RobbeSiongersPXL <73097305+Robbe-PXL@users.noreply.github.com>
+Date:   Tue May 4 10:12:27 2021 +0200
+
+    Create cart.png
+
+[33mcommit 080499effb6c5dbf8a17e8d7287602a7a8320d1c[m
+Author: RobbeSiongersPXL <73097305+Robbe-PXL@users.noreply.github.com>
+Date:   Tue May 4 10:12:25 2021 +0200
+
+    Create logo.png
+
+[33mcommit b4c8e3cc053f2ebc759e0494d6f8df87cb1c1490[m
+Author: RobbeSiongersPXL <73097305+Robbe-PXL@users.noreply.github.com>
+Date:   Tue May 4 10:12:21 2021 +0200
+
+    Create search.png
+
+[33mcommit ba54b7c025734b42426635afd34884401c317da8[m
+Author: RobbeSiongersPXL <73097305+Robbe-PXL@users.noreply.github.com>
+Date:   Tue May 4 10:12:19 2021 +0200
+
+    Create product.css
+
+[33mcommit 49da4aef46942e4da3b41640f8369accb55638e1[m
+Merge: 0c83e82 bee2189
+Author: RobbeSiongersPXL <73097305+Robbe-PXL@users.noreply.github.com>
+Date:   Tue May 4 10:10:22 2021 +0200
+
+    Merge branch 'main' of https://github.com/friscit/Omnia into main
+
+[33mcommit 0c83e82e33d63fb300cfb6a8487d5ae0aebf298b[m
+Author: RobbeSiongersPXL <73097305+Robbe-PXL@users.noreply.github.com>
+Date:   Tue May 4 10:10:10 2021 +0200
+
+    Update product.html
+
+[33mcommit bee218952f09336415271ecded748dbd26398d08[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Tue May 4 10:10:10 2021 +0200
+
+    test alerts verweidert
+
+[33mcommit d0bbda70dad2d3e4be08c9873e930ebd05d89dbd[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Tue May 4 10:06:34 2021 +0200
+
+    Added search option
+
+[33mcommit 038f1cc722e437a0462d0004b6f2e0976a39e043[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Tue May 4 09:15:21 2021 +0200
+
+    Header is gefixed. plusminus
+
+[33mcommit 89610833ef092164c70c8bd155ed843acc2368e7[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Mon May 3 17:38:18 2021 +0200
+
+    Misluckte .js code
+
+[33mcommit c8bd27c5846b9b7223ea6b3812954629423d99c9[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Mon May 3 17:36:38 2021 +0200
+
+    Navigatie elementen correct geplaatst.
+    Te lang zitten rommelen met .js
+
+[33mcommit b73534628703b75ac8a4806631684b1ebe420174[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Mon May 3 15:58:30 2021 +0200
+
+    Fixed afbeeldingen met juiste kleur.
+    De classe optie toegevoegd: bg-black
+
+[33mcommit 3e622ba0407d181e736315dc427700a30c455f4b[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Mon May 3 14:49:52 2021 +0200
+
+    Fixed color classes:
+    bg-primary is nu omnia blauw: #14213D
+    bg-secondary is nu omnia geel: #fca311
+    bg-tertiary is toegevoegt, omnia grijs: #e5e5e5
+
+[33mcommit 42771b1deaaac0e3d5b55652a44dd98634713f09[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Thu Apr 29 04:59:40 2021 +0200
+
+    Bootstrap loopt een beetje stroef. Code loopt steeds vast (in conflict).
+    
+    Dit is de bassiscode van de header. Het heeft nog een paar adjustments nodig.
+
+[33mcommit 04bf6bd4f78f522c2039b70dff85883d1df8743f[m
+Author: RobbeSiongersPXL <73097305+Robbe-PXL@users.noreply.github.com>
+Date:   Tue Apr 27 14:27:30 2021 +0200
+
+    Create product.html
+
+[33mcommit 3097d12b5e060130c468ae73d5ab13d47321144c[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Tue Apr 27 14:15:39 2021 +0200
+
+    no message
+
+[33mcommit abce2c3f0fa90af0a7b4130835b41c1eae1340c5[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Tue Apr 27 13:35:42 2021 +0200
+
+    Bassiscode
+
+[33mcommit 7620bb489b24dc9b7690f6a0eff3783b881ba446[m
+Author: friscit <jan.coomans@student.pxl.be>
+Date:   Tue Apr 27 11:31:59 2021 +0200
+
+    Test push.
+
+[33mcommit 917e4ea9f8eef3f8a34ff0ea473c4a2cd24709a1[m
+Author: friscit <47857297+friscit@users.noreply.github.com>
+Date:   Tue Apr 27 11:25:19 2021 +0200
+
+    Add files via upload
+
+[33mcommit 16d5c579ab2b8fb9c1689f35957b2cb3af842c11[m
+Author: friscit <47857297+friscit@users.noreply.github.com>
+Date:   Tue Apr 27 11:24:55 2021 +0200
+
+    Initial commit
