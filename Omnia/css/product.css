@@ -1,0 +1,47 @@
+body {
+    background-color: #fff;
+}
+
+nav {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5%;
+}
+
+nav a {
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin:0 15px;
+    float: right;
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #FCA311;
+}
+
+nav a.active {
+    color: #FCA311;
+    font-weight: bold;
+}
+
+nav img {
+    height: 20px;
+}
+
+.logo {
+    height: 30px;
+}
+
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+}
