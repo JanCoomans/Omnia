@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/index.css"><!-- Edit as needed -->
+    <link rel="stylesheet" href="./css/header.css">
     <script defer src="./js/index.js"></script><!-- Edit as needed -->
 </head>
 
@@ -17,7 +18,7 @@
 <header class="container-fluid fixed-top">
     <div class="row">
         <div class="col-1"></div>
-        <div class="col-10 d-flex justify-content-between">
+        <div class="col-10 px-0 d-flex justify-content-between">
             <a href="./index.html">
                 <img class="py-4" height="100px" src="./img/omnia_logo_white.png" alt="Omnia logo">
             </a>
@@ -42,8 +43,8 @@
                     </ul>
                     <form class="form-inline my-2 my-lg-0 justify-content-end">
                         <input id="header-search-input"  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button id="header-search-button" class="btn bg-black d-flex align-items-center justify-content-center" type="submit" onclick="ToggleSearchbar()">
-                            <img src="./img/search_icon_white.png" alt="Search Icon" onclick="ToggleSearchbar()">
+                        <button id="header-search-button" class="btn bg-black d-flex align-items-center justify-content-center" type="button">
+                            <img src="./img/search_icon_white.png" alt="Search Icon">
                         </button>
                     </form>
                 </div>

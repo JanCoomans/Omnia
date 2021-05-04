@@ -15,16 +15,3 @@ img{
   max-height: 100%;
   max-width: 100%;
 }
-
-header{
-  background: rgba(0, 0, 0, 0.7);
-}
-
-
-#header-search-button{
-  height: 38px;
-  width: 38px;
-  padding: 5px;
-}
-
-
