@@ -27,3 +27,15 @@ footer{
 footer #copyright{
     color: #ffffff;
 }
+/*edited height for the logo at the footer
+  Jorne Janssens*/
+footer #logo_footer{
+    width: 260px;
+    height: 72px;
+}
+/*fixed issue where webstorm gives a warning about the original image being 200px,
+  gave the image an id (logo_header) and moved it's "height=68px" to the contact.css instead.
+  Jorne Janssens*/
+#logo_header{
+    height: 68px;
+}

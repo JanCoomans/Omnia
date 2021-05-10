@@ -5,8 +5,8 @@
     --black:#000;
 }
 
-/* verander variabele voor focus / hover */
-
+/* Background */
+/* TODO: add focus / hover color */
 .bg-primary{background-color: var(--primary)!important}
 a.bg-primary:focus,a.bg-primary:hover,button.bg-primary:focus,button.bg-primary:hover{background-color: var(--primary)!important}
 
@@ -18,4 +18,28 @@ a.bg-tertiary:focus,a.bg-tertiary:hover,button.bg-tertiary:focus,button.bg-terti
 
 .bg-black{background-color: var(--black)!important}
 a.bg-black:focus,a.bg-tertiary:hover,button.bg-tertiary:focus,button.bg-tertiary:hover{background-color: var(--black)!important}
+
+/* Button color */
+/* TODO: add colors for: hover, focus, disabled
+    Don't forget to add '!important'.*/
+.btn-primary{color:#fff!important;background-color:var(--primary)!important;border-color:var(--primary)!important}
+.btn-primary:hover{color:#fff!important;background-color:#0069d9!important;border-color:#0062cc!important}
+.btn-primary.focus,.btn-primary:focus{color:#fff;background-color:#0069d9;border-color:#0062cc;box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}
+.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#007bff;border-color:#007bff}
+.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#0062cc;border-color:#005cbf}
+.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}.btn-secondary{color:#fff;background-color:#6c757d;border-color:#6c757d}
+
+.btn-secondary{color:#000!important;background-color:var(--secondary)!important;border-color:var(--secondary)!important}
+.btn-secondary:hover{color:#000;background-color:#5a6268;border-color:#545b62}
+.btn-secondary.focus,.btn-secondary:focus{color:#fff;background-color:#5a6268;border-color:#545b62;box-shadow:0 0 0 .2rem rgba(130,138,145,.5)}
+.btn-secondary.disabled,.btn-secondary:disabled{color:#fff;background-color:#6c757d;border-color:#6c757d}
+.btn-secondary:not(:disabled):not(.disabled).active,.btn-secondary:not(:disabled):not(.disabled):active,.show>.btn-secondary.dropdown-toggle{color:#fff;background-color:#545b62;border-color:#4e555b}
+.btn-secondary:not(:disabled):not(.disabled).active:focus,.btn-secondary:not(:disabled):not(.disabled):active:focus,.show>.btn-secondary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(130,138,145,.5)}
+
+.btn-tertiary{color:#000!important;background-color:var(--tertiary)!important;border-color:var(--tertiary)!important}
+.btn-tertiary:hover{color:#fff;background-color:#0069d9;border-color:#0062cc}
+.btn-tertiary.focus,.btn-tertiary:focus{color:#fff;background-color:#0069d9;border-color:#0062cc;box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}
+.btn-tertiary.disabled,.btn-tertiary:disabled{color:#fff;background-color:#007bff;border-color:#007bff}
+.btn-tertiary:not(:disabled):not(.disabled).active,.btn-tertiary:not(:disabled):not(.disabled):active,.show>.btn-tertiary.dropdown-toggle{color:#fff;background-color:#0062cc;border-color:#005cbf}
+.btn-tertiary:not(:disabled):not(.disabled).active:focus,.btn-tertiary:not(:disabled):not(.disabled):active:focus,.show>.btn-tertiary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}.btn-secondary{color:#fff;background-color:#6c757d;border-color:#6c757d}
 
