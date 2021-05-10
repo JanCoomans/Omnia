@@ -6,9 +6,8 @@ header div[class^='col-'] *{
     padding: 0;
 }
 
-#header-search-button{
+.btn-header{
     height: 38px;
     width: 38px;
-    padding: 5px;
 }
 
