@@ -11,3 +11,7 @@ header div[class^='col-'] *{
     width: 38px;
 }
 
+#header-logo{
+    height: 68px;
+}
+
