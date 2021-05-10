@@ -1,0 +1,29 @@
+/*copied style from index.html so that the header images are the same size and style
+  Jorne Janssens*/
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*changed it to "header img" from "img" so that it only selects the images in the header
+  Jorne Janssens*/
+header img{
+    max-height: 100%;
+    max-width: 100%;
+}
+/*code related to the footer
+  Jorne Janssens*/
+footer{
+    background-color: #000000;
+}
+footer #copyright{
+    color: #ffffff;
+}
