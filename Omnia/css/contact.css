@@ -19,3 +19,11 @@ header img{
     max-height: 100%;
     max-width: 100%;
 }
+/*code related to the footer
+  Jorne Janssens*/
+footer{
+    background-color: #000000;
+}
+footer #copyright{
+    color: #ffffff;
+}
