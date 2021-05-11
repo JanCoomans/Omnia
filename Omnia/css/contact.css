@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-div{
+div {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -15,24 +15,71 @@ div{
 
 /*changed it to "header img" from "img" so that it only selects the images in the header
   Jorne Janssens*/
-header img{
+header img {
     max-height: 100%;
     max-width: 100%;
 }
+
 /*code related to the footer
   Jorne Janssens*/
-footer p{
+footer p {
     color: #ffffff;
 }
+
 /*edited height for the logo at the footer
   Jorne Janssens*/
-footer #logo_footer{
+footer #logo_footer {
     width: 260px;
     height: 72px;
 }
+
 /*fixed issue where webstorm gives a warning about the original image being 200px,
   gave the image an id (logo_header) and moved it's "height=68px" to the contact.css instead.
   Jorne Janssens*/
-#logo_header{
+#logo_header {
     height: 68px;
+}
+
+/*this is temporary
+  Jorne Janssens*/
+
+body {
+    background-color: #393939;
+}
+
+p {
+    color: #ffffff;
+    font-size: 29pt;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 70pt;
+}
+
+#copyright {
+    font-size: 15pt;
+}
+
+/*testing images*/
+
+.container-fluid .row .col-6 img {
+    float: left;
+}
+
+/*here I edit the size of the icons
+  Jorne Janssens*/
+#telefoon {
+    height: 96px;
+    width: 65px;
+}
+
+#mail {
+    height: 56px;
+    width: 88px;
+}
+
+#locatie {
+    height: 96px;
+    width: 82px;
 }
