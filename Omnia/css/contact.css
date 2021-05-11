@@ -21,10 +21,7 @@ header img{
 }
 /*code related to the footer
   Jorne Janssens*/
-footer{
-    background-color: #000000;
-}
-footer #copyright{
+footer p{
     color: #ffffff;
 }
 /*edited height for the logo at the footer
