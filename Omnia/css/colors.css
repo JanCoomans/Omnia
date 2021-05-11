@@ -1,7 +1,7 @@
 :root{
-    --primary:#14213D;
-    --secondary:#fca311;
-    --tertiary:#e5e5e5;
+    --primary:#14213D; /* blauw */
+    --secondary:#fca311; /* geel */
+    --tertiary:#e5e5e5; /* grijs */
     --black:#000;
 }
 
@@ -42,4 +42,18 @@ a.bg-black:focus,a.bg-tertiary:hover,button.bg-tertiary:focus,button.bg-tertiary
 .btn-tertiary.disabled,.btn-tertiary:disabled{color:#fff;background-color:#007bff;border-color:#007bff}
 .btn-tertiary:not(:disabled):not(.disabled).active,.btn-tertiary:not(:disabled):not(.disabled):active,.show>.btn-tertiary.dropdown-toggle{color:#fff;background-color:#0062cc;border-color:#005cbf}
 .btn-tertiary:not(:disabled):not(.disabled).active:focus,.btn-tertiary:not(:disabled):not(.disabled):active:focus,.show>.btn-tertiary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}.btn-secondary{color:#fff;background-color:#6c757d;border-color:#6c757d}
+
+/* Text color */
+/* TODO: add focus / hover color */
+.text-primary{color:var(--primary)!important}
+a.text-primary:focus,a.text-primary:hover{color:#0056b3!important}
+.text-secondary{color:var(--secondary)!important}
+a.text-secondary:focus,a.text-secondary:hover{color:#494f54!important}
+.text-tertiary{color:var(--tertiary)!important}
+a.text-tertiary:focus,a.text-tertiary:hover{color:#494f54!important}
+
+/* Border color */
+.border-primary{border-color:var(--primary)!important}
+.border-secondary{border-color:var(--secondary)!important}
+.border-tertiary{border-color:var(--tertiary)!important}
 
