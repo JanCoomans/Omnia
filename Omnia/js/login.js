@@ -6,7 +6,7 @@ document.getElementById("login").addEventListener("click", controleAccount);
 function controleAccount(){
     let gebruikersnaam = document.getElementById("emailAdress").valueOf();
     let password = document.getElementById("password").valueOf();
-        console.log(gebruikersnaam + " " + password);
+    console.log(gebruikersnaam + " " + password);
 }
 
 
