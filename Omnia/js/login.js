@@ -1,10 +1,10 @@
-window.addEventListener("load", handleLoad);
+let klanten = [
+    {naam:'Soons',voornaam:'Nick',email:'Nick.Soons@omnia.com', password:'OMNIA123'}
+];
 
+document.getElementById("header-search-input").style.display = "none";
+document.getElementById("header-search-button").addEventListener("click", toggleSearchBar);
 
-function handleLoad() {// Zet alle events hierin, en maak apparte functies.
-    document.getElementById("header-search-input").style.display = "none";
-    document.getElementById("header-search-button").addEventListener("click", toggleSearchBar);
-}
 
 function toggleSearchBar() {
     let item = document.getElementById("header-search-input");
@@ -19,5 +19,8 @@ function toggleSearchBar() {
         let input = document.getElementById("header-search-input").value;
         document.location.href = "./" + input + ".html";
     }
-
 }
+
+
+
+
