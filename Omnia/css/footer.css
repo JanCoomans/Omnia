@@ -13,10 +13,6 @@
     height: 60px;
 }
 
-#footer-bottom.p {
-    vertical-align: auto;
-}
-
 #footer-logo {
     height: 95.46px;
     display: block;
@@ -39,16 +35,7 @@
     width: 0;
   }
 
-  #social {
-    display: block;
-    margin-top: 35px;
-    overflow: hidden;
-    white-space: nowrap;
-}
 
-#social ul {
-    list-style-type: none;
-}
 
 #social li {
    display: inline-block;
