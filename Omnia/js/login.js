@@ -6,7 +6,7 @@ document.getElementById("login").addEventListener("click", controleAccount);
 function controleAccount(){
     let gebruikersnaam = document.getElementById("emailAdress").valueOf();
     let password = document.getElementById("password").valueOf();
-    console.log(gebruikersnaam + " " + password);
+    alert("U bent ingelogd");
 }
 
 
@@ -28,7 +28,5 @@ function toggleSearchBar() {
         document.location.href = "./" + input + ".html";
     }
 }
-
-
 
 
