@@ -35,12 +35,11 @@
     width: 0;
   }
 
-
-
 #social li {
    display: inline-block;
    vertical-align: top;
    white-space: normal;
+
 }
 
 #social img {
