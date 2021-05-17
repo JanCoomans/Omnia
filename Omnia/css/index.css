@@ -7,6 +7,8 @@ body {
 
 #intro{
   padding: 50px 0 0 0;
+  background-image: url("../assets/img/home_intro_background.png");
+  background-size: cover;
 }
 
 .line-decoration{
