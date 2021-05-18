@@ -58,6 +58,7 @@ a.text-tertiary:focus,a.text-tertiary:hover{color:#494f54!important}
 .border-tertiary{border-color:var(--tertiary)!important}
 
 /* Margins */
+.mt-6{margin-top:6rem!important}
 .mb-6{margin-bottom:6rem!important}
 .mt-10{margin-top:10rem!important}
 .mb-10{margin-bottom:10rem!important}
