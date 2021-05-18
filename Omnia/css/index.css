@@ -11,9 +11,13 @@ body {
   background-size: cover;
 }
 
-.line-decoration{
+.line-decoration-horizontal{
   padding: 1px 0 0 0;
   width: 200px;
+}
+
+.line-decoration-vertical{
+  width: 1px;
 }
 
 #event{
