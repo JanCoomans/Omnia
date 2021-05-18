@@ -20,7 +20,7 @@
     <div class="col-1"></div>
     <div class="col-10 px-0 d-flex justify-content-between py-3">
       <a href="./index.html">
-        <img id="header-logo" class="py-2" src="./assets/img/omnia_logo_white.png" alt="Omnia logo">
+        <img id="header-logo" src="./assets/img/omnia_logo_horizontal.png" alt="Omnia logo">
       </a>
       <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -44,50 +44,66 @@
               <a class="nav-link float-right" href="contact.html">Contact</a>
             </li>
           </ul>
-          <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
-            <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
-                   placeholder="Search" aria-label="Search">
-            <button id="header-search-button"
-                    class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
-                    type="button">
-              <img src="./assets/img/search_icon_white.png" alt="Search Icon">
-            </button>
-          </form>
-          <button id="header-cart_button"
-                  class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
-                  type="button" onclick="window.location.href='#'">
-            <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-          </button>
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
+                <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
+                       placeholder="Search" aria-label="Search">
+                <button id="header-search-button"
+                        class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
+                        type="button">
+                  <img src="./assets/img/search_icon_white.png" alt="Search Icon">
+                </button>
+              </form>
+            </li>
+            <li>
+              <button id="header-cart_button"
+                      class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
+                      type="button" onclick="window.location.href='#'">
+                <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
+              </button>
+            </li>
+            <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
+              <button id="header-profile_button"
+                      class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-2 btn-header"
+                      type="button" onclick="window.location.href='./login.html'">
+                <img src="./assets/img/profile_icon_white.png" alt="Shopping cart Icon">
+              </button>
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
     <div class="col-1"></div>
   </div>
 </header>
-<main>
-  <section class="container-fluid">
+<main class="bg-white">
+  <div class="container-fluid">
+    <div class="row flex-column bg-primary py-5" id="contact">
+      <div class="col-5 mx-auto mb-1 mt-4">
+        <h1 class="text-center">SIGN IN / REGISTER</h1>
+      </div>
+      <div class="col-7"></div>
+    </div>
+  </div>s
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-12 justify-content-center pl-lg-5">
-        <h3>Log in</h3>
+      <div class="col-1"></div>
+      <div class="col-10">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 bg-black pb-5 rounded-left" id="block_1">
+
+            </div>
+            <div class="col-6 bg-tertiary pb-5 rounded-right" id="block_2">
+
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="col-1"></div>
     </div>
-    <div class="row"></div>
-    <div class="col-6">
-    <form>
-      <div class="form-group mt-5">
-        <label for="emailAdress">Email address</label>
-        <input type="email" class="form-control" id="emailAdress" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password">
-      </div>
-      <button type="button" class="btn btn-dark bg-black" id="login">Log in</button>
-      <button type="button" class="btn btn-dark bg-black">Create account</button>
-    </form>
-    </div>
-  </section>
+  </div>
 </main>
 <footer>
   <div id="footer-top">
