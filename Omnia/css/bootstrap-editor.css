@@ -57,16 +57,14 @@ a.text-tertiary:focus,a.text-tertiary:hover{color:#494f54!important}
 .border-secondary{border-color:var(--secondary)!important}
 .border-tertiary{border-color:var(--tertiary)!important}
 
-<<<<<<< HEAD:Omnia/css/bootstrap-editor.css
 /* Margins */
 .mt-10{margin-top:10rem!important}
 .mb-10{margin-bottom:10rem!important}
 
 /* Paddings */
-=======
+
 /* Width */
 .w-10{width:10%!important}
 .w-15{width:15%!important}
 .w-20{width:20%!important}
 
->>>>>>> 974a2498879534e4a6a57053d90fd679bad95b35:Omnia/css/colors.css
