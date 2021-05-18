@@ -39,7 +39,6 @@ body {
   padding: 32px 0;
 }
 
-
 @media only screen and (max-width: 510px) {
   #event h1{
     font-size: 32px;
