@@ -7,6 +7,24 @@ body {
 }
 
 #performance {
-    height: 100px;
     background-image: url("./assets/img/bg-performance.png");
 }
+
+.line-decoration-hori{
+    padding: 2px 0 0 0;
+    width: 200px;
+  }
+
+  .line-decoration-verti{
+    padding: 0 2px 0 0;
+    height: 200px;
+  }
+
+  .footer-line-decoration-hori-long {
+    padding: 2px 0 0 0;
+    width: 1000px;
+  }
+
+  td, th {
+    width: 25%;
+  }
