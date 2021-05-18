@@ -8,16 +8,17 @@ let klanten = [
 
 document.getElementById("login").addEventListener("click", controleAccount);
 function controleAccount(){
-    let gebruikersnaam = document.getElementById("emailAdress").valueOf();
-    let password = document.getElementById("password").valueOf();
+    let gebruikersnaam = document.getElementById("emailAdress").value;
+    let password = document.getElementById("password").value;
 
-        if (klanten.email === gebruikersnaam && klanten.password === password){
+    console.log(gebruikersnaam);
+    console.log(password);
+        if (klanten.email === gebruikersnaam || klanten.password === password){
             alert("Succes");
         }
         else{
-            alert("Failure");
+             alert("Failure");
         }
-
 }
 
 

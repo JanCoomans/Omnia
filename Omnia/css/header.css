@@ -10,7 +10,7 @@ img{
 }
 
 header{
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 header div[class^='col-'] *{
@@ -23,6 +23,6 @@ header div[class^='col-'] *{
 }
 
 #header-logo{
-    height: 68px;
+    height: 48px;
 }
 
