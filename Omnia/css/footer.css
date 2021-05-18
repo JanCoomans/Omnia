@@ -1,9 +1,7 @@
 #footer-top {
-    background-color: #1A2536;
     color: #fff;
     font-size: 0.875em;
     height: 427px;
-    margin-top: 150px;
 }
 
 #footer-bottom {
@@ -31,7 +29,7 @@
 
   .footer-line-decoration-verti{
     padding: 0 0.5px 0 0;
-    height: 96.71px;
+    height: 100px;
     width: 0;
   }
 
