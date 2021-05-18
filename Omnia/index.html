@@ -44,20 +44,33 @@
                             <a class="nav-link float-right" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
-                        <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
-                               placeholder="Search" aria-label="Search">
-                        <button id="header-search-button"
-                                class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
-                                type="button">
-                            <img src="./assets/img/search_icon_white.png" alt="Search Icon">
-                        </button>
-                    </form>
-                    <button id="header-cart_button"
-                            class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
-                            type="button" onclick="window.location.href='#'">
-                        <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-                    </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
+                                <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
+                                       placeholder="Search" aria-label="Search">
+                                <button id="header-search-button"
+                                        class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
+                                        type="button">
+                                    <img src="./assets/img/search_icon_white.png" alt="Search Icon">
+                                </button>
+                            </form>
+                        </li>
+                        <li>
+                            <button id="header-cart_button"
+                                    class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
+                                    type="button" onclick="window.location.href='#'">
+                                <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
+                            </button>
+                        </li>
+                        <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
+                            <button id="header-profile_button"
+                                    class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-2 btn-header"
+                                    type="button" onclick="window.location.href='./login.html'">
+                                <img src="./assets/img/profile_icon_white.png" alt="Shopping cart Icon">
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -68,10 +81,10 @@
 <main>
     <section id="intro" class="container-fluid m-0 vh-100 text-white">
         <div class="row h-100 m-0">
-            <div class="col-6 align-self-center">
+            <div class="col-md-6 align-self-center">
                 <div class="text-center">
-                    <h1 class="">OMNIA</h1>
-                    <h4 class="mt-3 mb-1">The console that runs it al.</h4>
+                    <img id="intro_logo" src="./assets/img/omnia_logo_vertical.png" alt="Omnia logo">
+                    <h3 class="mt-3 mb-1 font-weight-bolder">The console that runs it all.</h3>
                     <button class="btn btn-secondary px-4 py-2 mt-3 text-black-50" onclick="window.location.href='./product.html'">
                         <h5 class="py-1 px-3 m-0">Pre-order</h5>
                     </button>
@@ -85,8 +98,8 @@
             <div class="col-12 text-center">
                 <h2 class="">Play without limits</h2>
                 <div class="bg-secondary mx-auto my-3 line-decoration-horizontal"></div>
-                <h6>Don't play a game, play any game.</h6>
-                <button class="btn btn-secondary mt-3" onclick="window.location.href='./product.html'">Explore</button>
+                <h5>Don't play a game, play any game.</h5>
+                <button class="btn btn-secondary mt-3 px-4" onclick="window.location.href='./product.html'">Explore</button>
             </div>
         </div>
     </section>
@@ -97,22 +110,22 @@
                 <h1 class="text-white text-center">MIND BLOWING <span class="text-secondary">GRAPHICS</span></h1>
             </div>
             <div class="col bg-secondary align-self-center my-3 line-decoration-horizontal"></div>
-            <div class="col text-center">
-                <img class="w-50" src="./assets/img/console_front_view.png" alt="Omnia game console image">
+            <div class="col text-center pb-4">
+                <img id="specificationsConsoleImage" class="w-50" src="./assets/img/console_front_view.png" alt="Omnia game console image">
             </div>
             <div class="col">
-                <div class="row justify-content-center text-white">
-                    <div class="col-3 text-center">
+                <div id="specificationSections" class="row justify-content-center text-white">
+                    <div class="col-md-3 text-center">
                         <img class="w-25" src="./assets/img/headphone_yellow.png" alt="Headphone Icon">
                         <h4 class="my-3">Ultra fast SSD</h4>
                         <h6>Play you're games very smooth and quick with this SSD.</h6>
                     </div>
-                    <div class="col-3 text-center border border-secondary border-top-0 border-bottom-0">
+                    <div class="col-md-3 text-center border border-secondary border-top-0 border-bottom-0 ">
                         <img class="w-25" src="./assets/img/headphone_yellow.png" alt="Headphone Icon">
                         <h4 class="my-3">Great Sound</h4>
                         <h6>With the Dolby collab feels it like you're in the game.</h6>
                     </div>
-                    <div class="col-3 text-center">
+                    <div class="col-md-3 text-center">
                         <img class="w-25" src="./assets/img/headphone_yellow.png" alt="Headphone Icon">
                         <h4 class="my-3">Game Library</h4>
                         <h6>Big digital library to keep you're games stored and safe.</h6>
@@ -120,18 +133,18 @@
                 </div>
             </div>
             <div class="col text-center py-5">
-                <button class="btn btn-secondary" onclick="window.location.href='./product.html'">Meer info</button>
+                <button class="btn btn-secondary px-4" onclick="window.location.href='./product.html'">Meer info</button>
             </div>
         </div>
     </section>
 
     <section id="gamesTitle" class="container-fluid m-0 p-0">
         <div class="row m-0 py-5">
-            <div class="col-12 text-center">
+            <div class="col text-center">
                 <h2 class="">PLAY YOUR FAVORITE GAME</h2>
                 <div class="bg-secondary mx-auto my-3 line-decoration-horizontal"></div>
                 <h6>All games available in your Omnia-library.</h6>
-                <button class="btn btn-secondary mt-3" onclick="window.location.href='./product.html'">Explore</button>
+                <button class="btn btn-secondary mt-3 px-4" onclick="window.location.href='./product.html'">Explore</button>
             </div>
         </div>
     </section>
@@ -140,27 +153,27 @@
         <div class="row justify-content-center">
             <div class="col-md-5 col-10 pb-5">
                 <img class="w-100" src="./assets/img/minecraft.png" alt="minecraft Image">
-                <p class="py-2 m-0" ><h4 class="mb-3">Minecwaft</h4><h6>Minecraft is coming to OMNIA! Play as Steve in your favourite open world survival game.</h6>
+                <p class="py-2 m-0" ><h3 class="mb-3">Minecwaft</h3><h5>Minecraft is coming to OMNIA! Play as Steve in your favourite open world survival game.</h5>
                 <button class="btn btn-secondary mt-2 px-4" onclick="window.location.href='./product.html'">Meer Info</button>
             </div>
             <div class="col-md-5 col-10 pb-5">
                 <img class="w-100" src="./assets/img/fortnite.png" alt="Fortnite Image">
-                <p class="py-2 m-0" ><h4 class="mb-3">Fortnite</h4><h6>Fortnite, the best battle royale game on earth. Season 6 is comming soon with Lara Croft, Raven and many more. Now on the OMNIA.</h6>
+                <p class="py-2 m-0" ><h3 class="mb-3">Fortnite</h3><h5>Fortnite, the best battle royale game on earth. Season 6 is comming soon with Lara Croft, Raven and many more. Now on the OMNIA.</h5>
                 <button class="btn btn-secondary mt-2 px-4" onclick="window.location.href='./product.html'">Meer Info</button>
             </div>
             <div class="col-md-5 col-10 pb-5">
                 <img class="w-100" src="./assets/img/battleField.png" alt="Battlefield V Image">
-                <p class="py-2 m-0" ><h4 class="mb-3">Battlefield V</h4><h6>Rediscover World War 2 with Battlefield V. You can play in a offline mode. But also in a multiplayer mode.</h6>
+                <p class="py-2 m-0" ><h3 class="mb-3">Battlefield V</h3><h5>Rediscover World War 2 with Battlefield V. You can play in a offline mode. But also in a multiplayer mode.</h5>
                 <button class="btn btn-secondary mt-2 px-4" onclick="window.location.href='./product.html'">Meer Info</button>
             </div>
             <div class="col-md-5 col-10 pb-5">
                 <img class="w-100" src="./assets/img/starWars.png" alt="Star wars Battlefront II Image">
-                <p class="py-2 m-0" ><h4 class="mb-3">Star wars Battlefront II</h4><h6>The dark or the light side! It's you're time to chose. Discover you're side with Star Wars - Battlefront II on the OMNIA.</h6>
+                <p class="py-2 m-0" ><h3 class="mb-3">Star wars Battlefront II</h3><h5>The dark or the light side! It's you're time to chose. Discover you're side with Star Wars - Battlefront II on the OMNIA.</h5>
                 <button class="btn btn-secondary mt-2 px-4" onclick="window.location.href='./product.html'">Meer Info</button>
             </div>
             <div class="col-md-5 col-10 pb-5">
                 <img class="w-100" src="./assets/img/callOfDuty.png" alt="Call of Duty Black Ops: Cold War Image">
-                <p class="py-2 m-0" ><h4 class="mb-3">Call of Duty Black Ops: Cold War</h4><h6>Go back to the Cold war in the 80's with Call of Duty Black Ops: Cold War. Play in a nice offline storyline, multiplayer and a zombie mode!</h6>
+                <p class="py-2 m-0" ><h3 class="mb-3">Call of Duty Black Ops: Cold War</h3><h5>Go back to the Cold war in the 80's with Call of Duty Black Ops: Cold War. Play in a nice offline storyline, multiplayer and a zombie mode!</h5>
                 <button class="btn btn-secondary mt-2 px-4" onclick="window.location.href='./product.html'">Meer Info</button>
             </div>
             <div class="col-md-5 col-10 pb-5">
@@ -178,19 +191,19 @@
         </div>
     </section>
 
-    <section id="theFuckDoetDezeSectie?" class="container-fluid">
+    <section id="visualPerformance?" class="container-fluid">
         <div class="row flex-column text-center py-5">
-            <h3>See every detail and feel it in your hands</h3>
+            <h3 class="px-4">See every detail and feel it in your hands</h3>
             <div class="bg-secondary mx-auto my-3 line-decoration-horizontal"></div>
             <div class="col">
-                <div class="row justify-content-center my-5">
-                    <div class="col-4">
+                <div id="visualPerformanceCards" class="row justify-content-center my-5">
+                    <div class="col-sm-5">
                         <img class="w-15" src="./assets/img/headphone_yellow.png" alt="Headphone Icon">
                         <h3 class="my-4">Play in 4K</h3>
                         <h5>We support 4K gaming!<br>Yes you even can play Donkey Kong in 4K</h5>
                     </div>
                     <div class="bg-secondary mh-100 line-decoration-vertical"></div>
-                    <div class="col-4">
+                    <div class="col-sm-5">
                         <img class="w-15" src="./assets/img/headphone_yellow.png" alt="Headphone Icon">
                         <h3 class="my-4">Feel the game</h3>
                         <h5>Play and feel the game.<br>like you're in it.</h5>
@@ -205,7 +218,7 @@
 
     <section id="event" class="container-fluid">
         <div class="row h-100 justify-content-end align-content-center text-white text-center">
-            <div class="col-6 align-self-center">
+            <div class="col-lg-6 col-md-8 py-5">
                 <h1 class="">JOIN OUR GAME <span class="text-secondary">EVENT</span></h1>
                 <h5 class="font-italic">25 January 2032 - London Wembley Stadium</h5>
                 <button class="btn btn-secondary px-4 py-2 mt-3 text-black-50" onclick="window.location.href='./product.html'">
