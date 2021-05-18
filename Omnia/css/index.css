@@ -24,6 +24,10 @@ body {
   width: 1px;
 }
 
+#specificationSections img, #visualPerformanceCards img{
+  min-width: 80px;
+}
+
 #event{
   background-image: url("../assets/img/event_background.png");
   background-size: cover;
@@ -32,4 +36,57 @@ body {
 
 #event > div:first-child{
   background: rgba(0, 0, 0, 0.4);
+  padding: 32px 0;
+}
+
+
+@media only screen and (max-width: 510px) {
+  #event h1{
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #specificationsConsoleImage{
+    width: 90%!important;
+    max-width: 400px!important;
+    margin: 1em 0;
+  }
+
+  #specificationSections img{
+    width: 80px!important;
+  }
+
+  #specificationSections div{
+    width: 85%;
+    max-width: 400px;
+  }
+
+  #specificationSections div:nth-child(2){
+    border: var(--secondary) solid!important;
+    border-width: 1px 0!important;
+    padding: 2em 0;
+    margin: 2em 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #visualPerformanceCards > div:nth-child(1){
+    border: var(--secondary) solid!important;
+    border-width: 0 0 1px 0!important;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+  }
+
+  #visualPerformanceCards div:nth-child(2){
+    display: none;
+  }
+
+  #visualPerformanceCards div{
+    width: 85%;
+    max-width: 350px;
+  }
+
+  #visualPerformanceCards img{
+    width: 80px;
+  }
 }
