@@ -25,6 +25,14 @@ body {
     width: 1000px;
   }
 
-  td, th {
+  #performance td, th {
+    width: 20%;
+  }
+
+  #others td, th {
     width: 25%;
+  }
+
+  .spacing {
+    line-height: 2em;
   }

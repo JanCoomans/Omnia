@@ -55,15 +55,15 @@ footer #logo_footer {
     background-image: url(../assets/img/building_background.webp);
     background-size: cover;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
-    margin-top: -125px;
+    margin-top: -100px;
 }
 #block_2{
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
-    margin-top: -125px;
+    margin-top: -100px;
 }
 p, h1{
     color: #ffffff;
 }
 #contact{
-    min-height: 300px;
+    min-height: 380px;
 }
