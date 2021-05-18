@@ -20,12 +20,6 @@ header img {
     max-width: 100%;
 }
 
-/*code related to the footer
-  Jorne Janssens*/
-footer p {
-    color: #ffffff;
-}
-
 /*edited height for the logo at the footer
   Jorne Janssens*/
 footer #logo_footer {
@@ -40,32 +34,6 @@ footer #logo_footer {
     height: 68px;
 }
 
-/*this is temporary
-  Jorne Janssens*/
-
-body {
-    background-color: #393939;
-}
-
-p {
-    color: #ffffff;
-    font-size: 4vmin;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 7vmin;
-}
-
-#copyright {
-    font-size: 15pt;
-}
-
-/*testing images*/
-
-.container-fluid .row .col-6 img {
-    float: left;
-}
 
 /*here I edit the size of the icons
   Jorne Janssens*/
@@ -82,4 +50,20 @@ h1 {
 #locatie {
     height: 96px;
     width: 82px;
+}
+#block_1{
+    background-image: url(../assets/img/building_background.webp);
+    background-size: cover;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+    margin-top: -125px;
+}
+#block_2{
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+    margin-top: -125px;
+}
+p, h1{
+    color: #ffffff;
+}
+#contact{
+    min-height: 300px;
 }
