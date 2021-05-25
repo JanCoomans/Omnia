@@ -10,14 +10,14 @@ document.getElementById("login").addEventListener("click", controleAccount);
 function controleAccount(){
     let gebruikersnaam = document.getElementById("emailAdress").value;
     let password = document.getElementById("password").value;
-
+e
     console.log(gebruikersnaam);
     console.log(password);
-        if (klanten.email === gebruikersnaam || klanten.password === password){
-            alert("Succes");
+        if (klanten.email === gebruikersnaam && klanten.password === password){
+            console.log("Succes");
         }
         else{
-             alert("Failure");
+             console.log("Failure");
         }
 }
 

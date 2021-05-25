@@ -7,7 +7,7 @@
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/bootstrap-editor.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="./css/registratie.css"><!-- Edit as needed -->
@@ -20,7 +20,7 @@
         <div class="col-1"></div>
         <div class="col-10 px-0 d-flex justify-content-between py-3">
             <a href="./index.html">
-                <img id="header-logo" class="py-2" src="./assets/img/omnia_logo_white.png" alt="Omnia logo">
+                <img id="header-logo" src="./assets/img/omnia_logo_horizontal.png" alt="Omnia logo">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -44,76 +44,94 @@
                             <a class="nav-link float-right" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
-                        <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
-                               placeholder="Search" aria-label="Search">
-                        <button id="header-search-button"
-                                class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
-                                type="button">
-                            <img src="./assets/img/search_icon_white.png" alt="Search Icon">
-                        </button>
-                    </form>
-                    <button id="header-cart_button"
-                            class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
-                            type="button" onclick="window.location.href='#'">
-                        <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-                    </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
+                                <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
+                                       placeholder="Search" aria-label="Search">
+                                <button id="header-search-button"
+                                        class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
+                                        type="button">
+                                    <img src="./assets/img/search_icon_white.png" alt="Search Icon">
+                                </button>
+                            </form>
+                        </li>
+                        <li>
+                            <button id="header-cart_button"
+                                    class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
+                                    type="button" onclick="window.location.href='#'">
+                                <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
+                            </button>
+                        </li>
+                        <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
+                            <button id="header-profile_button"
+                                    class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-2 btn-header"
+                                    type="button" onclick="window.location.href='./login.html'">
+                                <img src="./assets/img/profile_icon_white.png" alt="Shopping cart Icon">
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
         <div class="col-1"></div>
     </div>
 </header>
-<main>
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-12 justify-content-center pl-lg-5 mt-5">
-                <h3>Register</h3>
+<main class="bg-white">
+    <div class="container-fluid">
+        <div class="row flex-column bg-primary py-5" id="contact">
+            <div class="col-5 mx-auto mb-1 mt-4">
+                <h1 class="text-center">REGISTER</h1>
             </div>
+            <div class="col-7"></div>
         </div>
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-6 mt-5">
-                <form>
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Last name</label>
-                                <input type="text" class="form-control" id="lastName">
-                            </div>
+                        <div class="col-6 bg-black pb-5 rounded-left" id="block_1">
+                            <h2>Welcome</h2>
+                            <p>Make an account</p>
                         </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">First name</label>
-                                <input type="text" class="form-control" id="fistName">
-                            </div>
+                        <div class="col-6 bg-tertiary pb-5 rounded-right" id="block_2">
+                            <form>
+                                <div class="form-group" id="firstName">
+                                    <label for="fname" id="fnameLabel">First name*</label> <br>
+                                    <input type="text" id="fname" placeholder="First name" class="form-control" required>
+                                </div>
+                                <div class="form-group" id="surName">
+                                    <label for="fname" id="snameLabel">Last name*</label> <br>
+                                    <input type="text" id="sname" placeholder="Last name" class="form-control" required>
+                                </div>
+                                <div class="form-group" id="email">
+                                    <label for="emailAdress" id="emailLabel">Email address*</label>
+                                    <input type="email" class="form-control" id="emailAdress" aria-describedby="emailHelp">
+                                    <small id="emailText" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password*</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="repeatPassword">Repeat password*</label>
+                                    <input type="repeatPassword" class="form-control" id="repeatPassword">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkTerms">
+                                    <label class="form-check-label" for="checkTerms">I have read the privacy-policy and agree</label>
+                                </div>
+                                <button type="button" class="btn btn-omnia" id="register">Register</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Repeat Password</label>
-                        <input type="password" class="form-control" id="repeatPassword1">
-                    </div>
-                  <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="checkTerms">
-                    <label class="form-check-label" for="checkTerms">I accept the term and conditions of OMNIA</label>
-                  </div>
-                    <button type="submit" class="btn btn-dark bg-black">Register</button>
-                </form>
+                </div>
             </div>
-            <div class="col-6 mt-3">
-                <img alt="Foto_registratie">s
-            </div>
+            <div class="col-1"></div>
         </div>
-    </section>
+    </div>
 </main>
 <footer>
     <div id="footer-top">
