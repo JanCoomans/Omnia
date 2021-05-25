@@ -35,7 +35,12 @@ body {
   width: 1px;
 }
 
-#specificationSections img, #visualPerformanceCards img{
+.specificationImageContainer{
+  height: 8vw; /*-> 20vw @ 768px*/
+  max-height: 100px;
+}
+
+#visualPerformanceCards img{
   min-width: 80px;
 }
 
@@ -56,20 +61,15 @@ body {
     margin: 1em 0;
   }
 
-  #specificationSections img{
-    width: 80px!important;
-  }
-
-  #specificationSections div{
-    width: 85%;
-    max-width: 400px;
-  }
-
   #specificationSections div:nth-child(2){
     border: var(--secondary) solid!important;
     border-width: 1px 0!important;
     padding: 2em 0;
     margin: 2em 0;
+  }
+
+  .specificationImageContainer{
+    height: 20vw;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -81,15 +81,8 @@ body {
   }
 
   #visualPerformanceCards div:nth-child(2){
-    display: none;
-  }
-
-  #visualPerformanceCards div{
-    width: 85%;
-    max-width: 350px;
-  }
-
-  #visualPerformanceCards img{
-    width: 80px;
+    display: none; /*seperation line*/
   }
 }
+
+
