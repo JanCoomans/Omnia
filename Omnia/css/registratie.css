@@ -29,7 +29,7 @@ img{
 
 #block_1{
     background-image: url(../assets/img/SignInPicture.png);
-    background-size: cover;
+    background-size: auto;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
     margin-top: -50px;
 }
@@ -38,5 +38,8 @@ img{
     margin-top: -50px;
 }
 label{
+    color: black;
+}
+#text{
     color: black;
 }

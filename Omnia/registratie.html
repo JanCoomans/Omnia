@@ -92,32 +92,39 @@
             <div class="col-10">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6 bg-black pb-5 rounded-left" id="block_1">
-                            <h2>Welcome</h2>
+                        <div class="col-6 bg-black pb-5 rounded-left text-center" id="block_1">
+                            <h2>WELCOME</h2>
                             <p>Make an account</p>
                         </div>
                         <div class="col-6 bg-tertiary pb-5 rounded-right" id="block_2">
+                            <h3 id="text" class="text-center mt-3 mb-3">Make an account</h3>
                             <form>
-                                <div class="form-group" id="firstName">
-                                    <label for="fname" id="fnameLabel">First name*</label> <br>
-                                    <input type="text" id="fname" placeholder="First name" class="form-control" required>
-                                </div>
-                                <div class="form-group" id="surName">
-                                    <label for="fname" id="snameLabel">Last name*</label> <br>
-                                    <input type="text" id="sname" placeholder="Last name" class="form-control" required>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group" id="firstName">
+                                            <label for="fname" id="fnameLabel">First name*</label> <br>
+                                            <input type="text" id="fname" placeholder="First name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group" id="surName">
+                                            <label for="fname" id="snameLabel">Last name*</label> <br>
+                                            <input type="text" id="sname" placeholder="Last name" class="form-control" required>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group" id="email">
                                     <label for="emailAdress" id="emailLabel">Email address*</label>
-                                    <input type="email" class="form-control" id="emailAdress" aria-describedby="emailHelp">
+                                    <input type="email" class="form-control" id="emailAdress" aria-describedby="emailHelp" placeholder="Email adres">
                                     <small id="emailText" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password*</label>
-                                    <input type="password" class="form-control" id="password">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
                                     <label for="repeatPassword">Repeat password*</label>
-                                    <input type="repeatPassword" class="form-control" id="repeatPassword">
+                                    <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat password">
                                 </div>
                                 <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="checkTerms">
