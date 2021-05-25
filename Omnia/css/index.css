@@ -40,6 +40,10 @@ body {
   max-height: 100px;
 }
 
+#visualPerformanceCards img{
+  min-width: 80px;
+}
+
 #event{
   background-image: url("../assets/img/event_background.png");
   background-size: cover;
@@ -79,14 +83,6 @@ body {
   #visualPerformanceCards div:nth-child(2){
     display: none; /*seperation line*/
   }
-
-  #visualPerformanceCards div{
-    width: 85%;
-    max-width: 350px;
-  }
-
-  #visualPerformanceCards img{
-    width: 80px;
-  }
 }
+
 
