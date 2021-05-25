@@ -18,7 +18,26 @@ img{
     max-width: 100%;
 }
 
-button{
-    background-color: black;
-    color: white;
+.btn-omnia{
+    background-color: #FCA311;
+    color: black;
+}
+
+.emailLabel{
+    color: black;
+}
+
+#block_1{
+    background-image: url(../assets/img/SignInPicture.png);
+    background-size: cover;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+    margin-top: -50px;
+}
+#block_2{
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+    margin-top: -50px;
+}
+
+label{
+    color: black;
 }

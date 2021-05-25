@@ -5,6 +5,17 @@ body {
   padding: 0;
 }
 
+.btn-size-normal{
+  width: 144px;
+  height: 40px;
+  font-size: 18px;
+}
+.btn-size-big{
+  width: 169px;
+  height: 47px;
+  font-size: 21px;
+}
+
 #intro{
   padding: 50px 0 0 0;
   background-image: url("../assets/img/home_intro_background.png");
@@ -36,13 +47,6 @@ body {
 
 #event > div:first-child{
   background: rgba(0, 0, 0, 0.4);
-  padding: 32px 0;
-}
-
-@media only screen and (max-width: 510px) {
-  #event h1{
-    font-size: 32px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
