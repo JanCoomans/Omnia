@@ -65,5 +65,14 @@ p, h1{
     color: #ffffff;
 }
 #contact{
-    min-height: 380px;
+    min-height: 400px;
+}
+#iconphone{
+    width: 50px;
+}
+#iconlocation{
+   width: 50px;
+}
+#iconmail{
+    width: 50px;
 }
