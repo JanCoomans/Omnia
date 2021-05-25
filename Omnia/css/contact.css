@@ -33,24 +33,6 @@ footer #logo_footer {
 #logo_header {
     height: 68px;
 }
-
-
-/*here I edit the size of the icons
-  Jorne Janssens*/
-#telefoon {
-    height: 96px;
-    width: 65px;
-}
-
-#mail {
-    height: 56px;
-    width: 88px;
-}
-
-#locatie {
-    height: 96px;
-    width: 82px;
-}
 #block_1{
     background-image: url(../assets/img/building_background.webp);
     background-size: cover;
@@ -60,9 +42,6 @@ footer #logo_footer {
 #block_2{
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
     margin-top: -100px;
-}
-p, h1{
-    color: #ffffff;
 }
 #contact{
     min-height: 400px;
