@@ -7,7 +7,7 @@ body {
 }
 
 #performance {
-    background-image: url("./assets/img/bg-performance.png");
+    background-image: url("../assets/img/bg-performance.png");
 }
 
 .line-decoration-hori{
@@ -36,3 +36,11 @@ body {
   .spacing {
     line-height: 2em;
   }
+
+  .glow-secondary {
+      box-shadow: 0 0 1vw #FCA311;
+  }
+
+.glow-tertiary {
+    box-shadow: 0 0 1vw #E5E5E5;
+}

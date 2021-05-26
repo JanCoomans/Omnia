@@ -15,61 +15,74 @@
     <script defer src="./js/index.js"></script><!-- Edit as needed -->
 </head>
 <body>
-    <header class="container-fluid fixed-top">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10 px-0 d-flex justify-content-between py-3">
-                <a href="./index.html">
-                    <img id="header-logo" class="py-2" src="./assets/img/omnia_logo_white.png" alt="Omnia logo">
-                </a>
-                <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link float-right" href="./index.html">Home <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link float-right" href="./about.html">About</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link float-right" href="./product.html">Product</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link float-right" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
-                            <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
-                                   placeholder="Search" aria-label="Search">
-                            <button id="header-search-button"
-                                    class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
-                                    type="button">
-                                <img src="./assets/img/search_icon_white.png" alt="Search Icon">
+<header class="container-fluid fixed-top">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 px-0 d-flex justify-content-between py-3">
+            <a href="./index.html">
+                <img id="header-logo" src="./assets/img/omnia_logo_horizontal.png" alt="Omnia logo">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link float-right" href="./index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-right" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link float-right" href="./product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link float-right" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
+                                <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
+                                       placeholder="Search" aria-label="Search">
+                                <button id="header-search-button"
+                                        class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
+                                        type="button">
+                                    <img src="./assets/img/search_icon_white.png" alt="Search Icon">
+                                </button>
+                            </form>
+                        </li>
+                        <li>
+                            <button id="header-cart_button"
+                                    class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
+                                    type="button" onclick="window.location.href='#'">
+                                <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
                             </button>
-                        </form>
-                        <button id="header-cart_button"
-                                class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
-                                type="button" onclick="window.location.href='#'">
-                            <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-                        </button>
-                    </div>
-                </nav>
-            </div>
-            <div class="col-1"></div>
+                        </li>
+                        <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
+                            <button id="header-profile_button"
+                                    class="btn bg-black d-flex float-right align-items-center justify-content-center ml-1 p-2 btn-header"
+                                    type="button" onclick="window.location.href='./login.html'">
+                                <img src="./assets/img/profile_icon_white.png" alt="Shopping cart Icon">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </header>
+        <div class="col-1"></div>
+    </div>
+</header>
 
     <main>
         <section id="top">
             <div class="row bg-primary">
                 <div class="col-md-6 text-center">
-                    <img class="mt-10 mb-10" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
+                    <img class="mt-10 mb-5 h-25" src="./assets/img/logo_gradient.png" alt="Logo OMNIA"><br>
                     <button class="btn bg-secondary px-4 py-2" type="button">Specifications</button>
                 </div>
                 <div class="col-md-6">
@@ -78,9 +91,9 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1 class="my-5">Play without limits</h1>
-                    <div class="col bg-secondary mx-auto my-5 footer-line-decoration-hori"></div>
-                    <p class="spacing my-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore<br>magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd<br>gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <h1 class="mt-5">Play without limits</h1>
+                    <div class="col bg-secondary mx-auto my-4 footer-line-decoration-hori"></div>
+                    <p class="spacing mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore<br>magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd<br>gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
             <div id="performance" class="row bg-primary text-white">
@@ -209,13 +222,88 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="pricing" class="mb-10">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h3 class="mt-5">Our Pricing</h3>
                     <div class="col bg-secondary mx-auto my-4 footer-line-decoration-hori"></div>
                 </div>
             </div>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-md-3 text-center border border-tertiary py-5 my-4 glow-tertiary">
+                        <h4 class="mb-4">BASIC</h4>
+                        <h2><sup>$</sup>149<sup>99</sup></h2>
+                        <table class="mx-auto my-5">
+                            <tr class="py-2">
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                        </table>
+                        <button onclick="location = '#'" class="btn bg-white border-secondary px-5 py-2" type="button">Pre-Order</button>
+                    </div>
+                    <div class="col-md-3 text-center border border-secondary py-5 glow-secondary">
+                        <h4 class="mb-4">PRO</h4>
+                        <h2><sup>$</sup>350<sup>99</sup></h2>
+                        <table class="mx-auto my-5">
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                        </table>
+                        <button onclick="location = '#'" class="btn bg-secondary px-5 py-2" type="button">Pre-Order</button>
+                    </div>
+                    <div class="col-md-3 text-center border border-tertiary py-5 my-4 glow-tertiary">
+                        <h4 class="mb-4">PREMIUM</h4>
+                        <h2><sup>$</sup>280<sup>99</sup></h2>
+                        <table class="mx-auto my-5">
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><img src="./assets/img/check.png" alt="check"></td>
+                                <td class="p-3">Dolby digital 5.1</td>
+                            </tr>
+                        </table>
+                        <button onclick="location = '#'" class="btn bgwhite border-secondary px-5 py-2" type="button">Pre-Order</button>
+                    </div>
+                </div>
         </section>
     </main>
 
@@ -232,14 +320,14 @@
                         </ul>
                     </div>
                     <div class="col-md-4 text-center"> <!--Middle-->
-                        <img id="footer-logo" class="mx-auto" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
+                        <img id="footer-logo" class="mx-auto mt-4" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
                         <ul id="social" class="p-0 mt-4"> 
                             <li class="social-size"><a href="https://www.facebook.com/OmniaConsole" target="_blank" aria-hidden="true"><img src="assets/img/facebook.png" alt="Facebook logo"></a></li>
                             <li class="social-size"><a href="https://www.instagram.com/omnia_console/" target="_blank" aria-hidden="true"><img src="assets/img/instagram.png" alt="Instagram logo"></a></li>
                             <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg" target="_blank" aria-hidden="true"><img src="assets/img/youtube.png" alt="YouTube logo"></a></li>
                         </ul>
                         <div class="col bg-secondary mx-auto my-4 footer-line-decoration-verti"></div>
-                        <button onclick="location = './contact.html'" class="btn bg-secondary px-5 py-2" type="button">CONTACT</button>
+                        <button onclick="location = './contact.html'" class="btn bg-secondary px-5 py-2 mb-5" type="button">CONTACT</button>
                     </div>
                     <div class="col-md-4 text-center"> <!--Right-->
                         <div class="col bg-secondary mx-auto mt-5 my-3 footer-line-decoration-hori"></div>
@@ -253,10 +341,10 @@
                 </div>
             </div>
         </div>
-        <div id="footer-bottom">
+        <div id="footer-bottom" class="bg-black text-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center mt-4">
+                    <div class="col-md-12 text-center pb-2 pt-3">
                         <p>© 2021 Omnia. All rights reserved.</p> <!--This footer caused me many baguette but it isn't bread -Robbe-->
                     </div>
                 </div>
@@ -265,4 +353,3 @@
     </footer>
 </body>
 </html>
-
