@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/header.css">
     <script defer src="./js/contact.js"></script>
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 <!--header copied from the index.html
@@ -35,7 +36,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link float-right" href="./index.html">Home <span
                                     class="sr-only">(current)</span></a>
                         </li>
@@ -45,7 +46,7 @@
                         <li class="nav-item">
                             <a class="nav-link float-right" href="./product.html">Product</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link float-right" href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -55,7 +56,7 @@
                                 <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
                                        placeholder="Search" aria-label="Search">
                                 <button id="header-search-button"
-                                        class="btn bg-black d-flex align-items-center justify-content-center p-1 btn-header"
+                                        class="btn d-flex align-items-center justify-content-center p-1 btn-header"
                                         type="button">
                                     <img src="./assets/img/search_icon_white.png" alt="Search Icon">
                                 </button>
@@ -63,14 +64,14 @@
                         </li>
                         <li>
                             <button id="header-cart_button"
-                                    class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
+                                    class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
                                     type="button" onclick="window.location.href='#'">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
                             <button id="header-profile_button"
-                                    class="btn bg-black d-flex float-right align-items-center justify-content-center ml-2 p-2 btn-header"
+                                    class="btn d-flex float-right align-items-center justify-content-center ml-1 p-2 btn-header"
                                     type="button" onclick="window.location.href='./login.html'">
                                 <img src="./assets/img/profile_icon_white.png" alt="Shopping cart Icon">
                             </button>
@@ -84,11 +85,11 @@
 </header>
 <!--container where all the content of the webpage will be located
     Jorne Janssens-->
-<main class="bg-white">
+<main class="bg-white pb-5">
     <div class="container-fluid">
         <div class="row flex-column bg-primary py-5" id="contact">
             <div class="col-5 mx-auto my-auto">
-                <h1 class="text-center">CONTACT</h1>
+                <h1 class="text-center text-white font-weight-bold h1">CONTACT</h1>
             </div>
             <div class="col-7">
 
@@ -97,61 +98,171 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1">
+            <div class="col-2">
 
             </div>
-            <div class="col-10">
+            <div class="col-md-8">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6 bg-black pb-5 rounded-left" id="block_1">
-                            <img src="assets/img/icon_location_white.png" alt="an icon for location">
-                            <h1>Address</h1>
-                            <p>Hasseltsesteenweg 524</p>
-                            <img src="assets/img/icon_phone_white.png" alt="an icon of a phone">
-                            <img src="assets/img/icon_mail_white.png" alt="an icon of a letter">
-                            <p>3500 Hasselt</p>
-                            <p>Limburg, België</p>
-                            <h1>Let's talk</h1>
-                            <p>+32 156 54 96</p>
-                            <h1>Support</h1>
-                            <p>support@omnia-console.com</p>
-                        </div>
-                        <div class="col-6 bg-tertiary pb-5 rounded-right" id="block_2">
+                        <div class="col-md-6 bg-black pb-5 rounded-lg" id="block_1">
+                                <div class="row align-content-center h-100">
+                                    <div class="col-1">
 
-                        </div>
+                                    </div>
+                                    <div class="col-3 ml-3">
+                                        <div class="row d-flex flex-column h-100 align-items-end">
+                                            <div class="pt-2 mb-5 mr-4">
+                                                <img id="iconlocation" src="assets/img/icon_location_white.png"
+                                                     alt="an icon for location">
+                                            </div>
+                                            <div class="pt-5 mt-3 mb-n1 mr-4">
+                                                <img id="iconphone" src="assets/img/icon_phone_white.png"
+                                                     alt="an icon of a phone">
+                                            </div>
+                                            <div class="pt-5 mt-2 mr-4">
+                                                <img id="iconmail" src="assets/img/icon_mail_white.png"
+                                                     alt="an icon of a letter">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h1 class="text-white font-weight-bold h3">Address</h1>
+                                        <p class="text-white">Hasseltsesteenweg 524</p>
+                                        <p class="text-white">3500 Hasselt</p>
+                                        <p class="text-white">Limburg, België</p>
+                                        <h1 class="text-white font-weight-bold h3">Let's talk</h1>
+                                        <p class="text-white">+32 156 54 96</p>
+                                        <h1 class="text-white font-weight-bold h3">Support</h1>
+                                        <p class="text-white">support@omnia-console.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-md-6 bg-white pb-5 rounded-lg" id="block_2">
+                                <div class="row pt-5 my-auto">
+                                    <div class="col-1">
+
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="row d-flex flex-column h-100">
+                                            <div class="col-12 text-center">
+                                                <h1 class="h2">Send us a message</h1>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="form-group">
+                                                            <label for="FirstName">First name *</label>
+                                                            <input type="text" class="form-control" id="FirstName">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-group">
+                                                            <label for="LastName">Last name *</label>
+                                                            <input type="text" class="form-control" id="LastName">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="Email">Email *</label>
+                                                    <input type="email" class="form-control" id="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="Phone">Phone</label>
+                                                    <input type="number" class="form-control" id="Phone">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="Message">Your message *</label>
+                                                    <textarea class="form-control" id="Message" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="Check">
+                                                    <label class="form-check-label" for="Check">
+                                                        I have read the privacy-policy and agree
+                                                    </label>
+                                                </div>
+                                                <div class="col-12 pt-3">
+                                                    <button type="submit" class="btn btn-secondary w-25 ml-n3">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-1">
+                <div class="col-2">
 
+                </div>
             </div>
         </div>
     </div>
 </main>
 
-<!--footer for the contact page
+<!--footer for the contact page copied from the index.html
     Jorne Janssens-->
-<footer class="bg-black container-fluid fixed-bottom">
-    <!--facebook logo that links to our facebook needs to be added
-        Jorne Janssens-->
-    <!--<img>-->
-
-    <!--instagram logo that links to our facebook needs to be added
-        Jorne Janssens-->
-    <!--<img>-->
-
-    <!--youtube logo that links to our facebook needs to be added
-        Jorne Janssens-->
-    <!--<img>-->
-
-    <!--copyright logo needs to be added
-        Jorne Janssens-->
-    <!--<img>-->
-
-    <!--Added logo omnia and copyright text.
-        Jorne Janssens-->
-    <p class="text-center" id="copyright">2021 copyright OMNIA. All games are property of their respective owners.</p>
-    <img id="logo_footer" class="mx-auto d-block" src="./assets/img/omnia_logo_white.png" alt="Omnia logo">
+<footer class="pt-5">
+    <div id="footer-top" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center"> <!--Left-->
+                    <div class="col bg-secondary mx-auto mt-5 my-3 footer-line-decoration-hori"></div>
+                    <ul class="list-unstyled mt-5">
+                        <li>Tel: +32 156 54 96</li>
+                        <li>Mail: info@omnia.be</li>
+                        <li>Hasseltsesteenweg 524<br>3500 Hasselt<br>Limburg, België</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center"> <!--Middle-->
+                    <img id="footer-logo" class="mx-auto" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
+                    <ul id="social" class="p-0 mt-4">
+                        <li class="social-size"><a href="https://www.facebook.com/OmniaConsole" target="_blank"
+                                                   aria-hidden="true"><img src="assets/img/facebook.png"
+                                                                           alt="Facebook logo"></a></li>
+                        <li class="social-size"><a href="https://www.instagram.com/omnia_console/" target="_blank"
+                                                   aria-hidden="true"><img src="assets/img/instagram.png"
+                                                                           alt="Instagram logo"></a></li>
+                        <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg"
+                                                   target="_blank" aria-hidden="true"><img src="assets/img/youtube.png"
+                                                                                           alt="YouTube logo"></a></li>
+                    </ul>
+                    <div class="col bg-secondary mx-auto my-4 footer-line-decoration-verti"></div>
+                    <button onclick="location.href = './contact.html'" class="btn bg-secondary px-5 py-2" type="button">
+                        CONTACT
+                    </button>
+                </div>
+                <div class="col-md-4 text-center"> <!--Right-->
+                    <div class="col bg-secondary mx-auto mt-5 my-3 footer-line-decoration-hori"></div>
+                    <ul class="list-unstyled mt-5">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html">About</a></li>
+                        <li><a href="./product.html">Product</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mt-4">
+                    <p>© 2021 Omnia. All rights reserved.</p>
+                    <!--This footer caused me many baguette but it isn't bread -Robbe-->
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>

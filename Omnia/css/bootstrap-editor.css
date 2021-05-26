@@ -72,3 +72,51 @@ a.text-tertiary:focus,a.text-tertiary:hover{color:#494f54!important}
 /* Width */
 .w-15{width: 15%}
 .w-40{width: 40%}
+
+/*
+Text scaling
+Default:
+.display-4{font-size: 3.5rem}
+h1 {font-size:2.5rem;}
+h2 {font-size:2rem;}
+h3 {font-size:1.75rem;}
+h4 {font-size:1.5rem;}
+h5 {font-size:1.25rem;}
+h6 {font-size:1rem;}
+*/
+@media (max-width: 1200px) {
+    .display-4{font-size: 3.5rem}
+    h1 {font-size:2.5rem;}
+    h2 {font-size:2rem;}
+    h3 {font-size:1.75rem;}
+    h4 {font-size:1.5rem;}
+    h5 {font-size:1.25rem;}
+    h6 {font-size:1rem;}
+}
+@media (max-width: 992px) {
+    .display-4{font-size: 3rem}
+    h1 {font-size:2.25rem;}
+    h2 {font-size:1.75rem;}
+    h3 {font-size:1.5rem;}
+    h4 {font-size:1.25rem;}
+    h5 {font-size:1.2rem;}
+    h6 {font-size:1rem;}
+}
+@media (max-width: 768px) {
+    .display-4{font-size: 2.5rem}
+    h1 {font-size:2.0rem;}
+    h2 {font-size:1.5rem;}
+    h3 {font-size:1.4rem;}
+    h4 {font-size:1.3rem;}
+    h5 {font-size:1.15rem;}
+    h6 {font-size:1rem;}
+}
+@media (max-width: 576px) {
+    .display-4{font-size: 2rem}
+    h1 {font-size:1.5rem;}
+    h2 {font-size:1.4rem;}
+    h3 {font-size:1.3rem;}
+    h4 {font-size:1.2rem;}
+    h5 {font-size:1.1rem;}
+    h6 {font-size:1rem;}
+}

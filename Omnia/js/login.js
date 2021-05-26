@@ -13,11 +13,12 @@ function controleAccount(){
 
     console.log(gebruikersnaam);
     console.log(password);
-        if (klanten.email === gebruikersnaam || klanten.password === password){
-            alert("Succes");
+
+        if (klanten.email === gebruikersnaam && klanten.password === password){
+            console.log("Succes");
         }
-        else{
-             alert("Failure");
+        else {
+            console.log("Failure");
         }
 }
 

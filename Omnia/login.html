@@ -81,22 +81,40 @@
   <div class="container-fluid">
     <div class="row flex-column bg-primary py-5" id="contact">
       <div class="col-5 mx-auto mb-1 mt-4">
-        <h1 class="text-center">SIGN IN / REGISTER</h1>
+        <h1 class="text-center">SIGN IN</h1>
       </div>
       <div class="col-7"></div>
     </div>
-  </div>s
+  </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-1"></div>
       <div class="col-10">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-6 bg-black pb-5 rounded-left" id="block_1">
-
+            <div class="col-6 bg-black pb-5 rounded-left text-center" id="block_1">
+              <h2>WELCOME BACK</h2>
+              <p>Login to continue</p>
             </div>
             <div class="col-6 bg-tertiary pb-5 rounded-right" id="block_2">
-
+              <h3 id="signIn" class="text-center">Log in to your account</h3>
+              <form>
+                <div class="form-group" id="email">
+                  <label for="emailAdress" id="emailLabel">Email address</label>
+                  <input type="email" class="form-control" id="emailAdress" aria-describedby="emailHelp">
+                  <small id="emailText" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="checkTerms">
+                  <label class="form-check-label" for="checkTerms">I have read the privacy-policy and agree</label>
+                </div>
+                <button type="button" class="btn btn-omnia" id="login">Sign In</button>
+                <p id="registration" class="pl-2"><a href="registratie.html"> Don't have an account yet? </a> </p>
+              </form>
             </div>
           </div>
         </div>
