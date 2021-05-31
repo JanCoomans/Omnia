@@ -26,3 +26,8 @@ header div[class^='col-'] *{
     height: 48px;
 }
 
+@media only screen and (max-width: 992px) {
+    #header-first{
+        margin-top: 1em;
+    }
+}
