@@ -14,12 +14,26 @@ function controleAccount(){
     console.log(gebruikersnaam);
     console.log(password);
 
-        if (klanten.email === gebruikersnaam && klanten.password === password){
-            console.log("Succes");
-        }
-        else {
-            console.log("Failure");
-        }
+        // if (klanten.email === gebruikersnaam && klanten.password === password){
+        //     console.log("Succes");
+        // }
+        // else {
+        //     console.log("Failure");
+        // }
+    if (gebruikersnaam == klanten.email){
+        console.log("email is oke")
+    }
+    else{
+        console.log("email is niet oke")
+    }
+    if (password == klanten.password){
+        console.log("password is oke")
+    }
+    else{
+        console.log("password is niet oke")
+    }
+
+
 }
 
 
