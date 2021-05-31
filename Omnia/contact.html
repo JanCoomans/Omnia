@@ -9,7 +9,10 @@
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
+    <!--css files copied from index.html-->
     <link rel="stylesheet" href="./css/bootstrap-editor.css">
+    <!-- Adobe fonts: Oxygen - Titillium-web - Ubuntu -->
+    <link rel="stylesheet" href="https://use.typekit.net/eod0ust.css">
     <!--color css file-->
     <link rel="stylesheet" href="./css/bootstrap-editor.css">
     <!--contact exclusive javascript and css files-->
@@ -34,17 +37,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link float-right" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        <li id="header-first" class="nav-item active py-1">
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link float-right" href="./about.html">About</a>
+                        <li class="nav-item py-1">
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./about.html">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link float-right" href="./product.html">Product</a>
+                        <li class="nav-item py-1">
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link float-right" href="contact.html">Contact</a>
+                        <li class="nav-item py-1">
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -79,7 +82,7 @@
     <div class="container-fluid">
         <div class="row flex-column bg-primary py-5" id="contact">
             <div class="col-md-5 mx-md-auto my-auto">
-                <h1 class="text-center text-white font-weight-bold h1">CONTACT</h1>
+                <h1 class="text-center text-white font-weight-bold h1 font-titillium-web">CONTACT</h1>
             </div>
             <div class="col-7">
 
@@ -113,14 +116,14 @@
                                         </div>
                                     </div>
                                     <div class="col-7 xs-mt-3 ml-4">
-                                        <h1 class="text-white font-weight-bold h3">Address</h1>
-                                        <p class="text-white">Hasseltsesteenweg 524</p>
-                                        <p class="text-white">3500 Hasselt</p>
-                                        <p class="text-white">Limburg, België</p>
-                                        <h1 class="text-white font-weight-bold h3">Let's talk</h1>
-                                        <p class="text-white">+32 156 54 96</p>
-                                        <h1 class="text-white font-weight-bold h3">Support</h1>
-                                        <p class="text-white">support@omnia-console.com</p>
+                                        <h1 class="text-white font-weight-semibold h3 font-titillium-web">Address</h1>
+                                        <p class="text-white font-oxygen">Hasseltsesteenweg 524</p>
+                                        <p class="text-white font-oxygen">3500 Hasselt</p>
+                                        <p class="text-white font-oxygen">Limburg, België</p>
+                                        <h1 class="text-white font-weight-semibold h3 font-titillium-web">Let's talk</h1>
+                                        <p class="text-white font-oxygen">+32 156 54 96</p>
+                                        <h1 class="text-white font-weight-semibold h3 font-titillium-web">Support</h1>
+                                        <p class="text-white font-oxygen">support@omnia-console.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -132,19 +135,19 @@
                                     <div class="col-10">
                                         <div class="row d-flex flex-column h-100">
                                             <div class="col-12 text-center">
-                                                <h1 class="h2">Send us a message</h1>
+                                                <h1 class="h2 font-weight-bold font-titillium-web">Send Us A Message</h1>
                                             </div>
                                             <div class="col-12">
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <div class="form-group">
-                                                            <label for="FirstName">First name *</label>
+                                                            <label for="FirstName" class="font-weight-bold font-oxygen">First name *</label>
                                                             <input type="text" class="form-control" id="FirstName">
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="form-group">
-                                                            <label for="LastName">Last name *</label>
+                                                            <label for="LastName" class="font-weight-bold font-oxygen">Last name *</label>
                                                             <input type="text" class="form-control" id="LastName">
                                                         </div>
                                                     </div>
@@ -152,31 +155,31 @@
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <label for="Email">Email *</label>
+                                                    <label for="Email" class="font-weight-bold font-oxygen">Email *</label>
                                                     <input type="email" class="form-control" id="Email">
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <label for="Phone">Phone</label>
+                                                    <label for="Phone" class="font-weight-bold font-oxygen">Phone</label>
                                                     <input type="number" class="form-control" id="Phone">
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                    <label for="Message">Your message *</label>
+                                                    <label for="Message" class="font-weight-bold font-oxygen">Your message *</label>
                                                     <textarea class="form-control" id="Message" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" id="Check">
-                                                    <label class="form-check-label" for="Check">
+                                                    <label class="form-check-label font-weight-bold font-oxygen" for="Check">
                                                         I have read the privacy-policy and agree
                                                     </label>
                                                 </div>
                                                 <div class="col-12 pt-3">
-                                                    <button type="submit" class="btn btn-secondary ml-n3">Send</button>
+                                                    <button type="submit" class="btn btn-secondary ml-n3 font-titillium-web">Send</button>
                                                 </div>
                                             </div>
                                         </div>
