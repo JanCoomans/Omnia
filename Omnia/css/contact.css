@@ -33,25 +33,68 @@ footer #logo_footer {
 #logo_header {
     height: 68px;
 }
-#block_1{
+
+#block_1 {
     background-image: url(../assets/img/building_background.webp);
     background-size: cover;
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
     margin-top: -100px;
 }
-#block_2{
+
+#block_2 {
     box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
     margin-top: -100px;
 }
-#contact{
+
+#contact {
     min-height: 400px;
 }
-#iconphone{
+
+#iconphone {
     width: 40px;
 }
-#iconlocation{
-   width: 40px;
+
+#iconlocation {
+    width: 40px;
 }
-#iconmail{
+
+#iconmail {
     width: 50px;
+}
+
+/*This is for making the icons responsive in size
+   Jorne Janssens*/
+@media only screen and (max-width: 1200px) {
+    #iconphone {
+        width: 30px;
+    }
+
+    #iconlocation {
+        width: 30px;
+    }
+
+    #iconmail {
+        width: 40px;
+    }
+
+    #block_2 {
+        margin-top: 0;
+    }
+
+    #block_1 {
+        margin-top: 0;
+    }
+}
+
+/*This is for making the mobile version 2nd block not clip over the 1st block
+   Jorne Janssens*/
+@media only screen and (max-width: 767px) {
+    #block_1 {
+        margin-top: -100px;
+    }
+}
+
+/*This is to give the submit button a fixed width rather then a responsive width*/
+.btn-secondary {
+    width: 125px;
 }
