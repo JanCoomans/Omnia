@@ -45,3 +45,15 @@ label{
 #signIn{
     color: black;
 }
+
+.font-titillium-web{
+    font-family: titillium-web;
+}
+
+.font-oxygen{
+    font-family: oxygen;
+}
+
+.font-comfortaa{
+    font-family: 'Comfortaa', cursive;
+}
