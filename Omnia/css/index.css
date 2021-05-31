@@ -73,6 +73,10 @@ body {
   }
 }
 @media only screen and (max-width: 576px) {
+  #visualPerformanceCards{
+    padding: 0 2em;
+  }
+
   #visualPerformanceCards > div:nth-child(1){
     border: var(--secondary) solid!important;
     border-width: 0 0 1px 0!important;
