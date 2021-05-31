@@ -72,6 +72,23 @@ a.text-tertiary:focus,a.text-tertiary:hover{color:#494f54!important}
 .w-15{width: 15%}
 .w-40{width: 40%}
 
+/* Text size */
+.font-titillium-web{
+    font-family: titillium-web;
+}
+
+.font-oxygen{
+    font-family: oxygen;
+}
+
+.font-comfortaa{
+    font-family: 'Comfortaa', cursive;
+}
+
+.font-weight-semibold{
+    font-weight: 600;
+}
+
 /*
 Text scaling
 Default:

@@ -69,7 +69,7 @@ body {
   }
 
   .specificationImageContainer{
-    height: 20vw;
+    height: 16vw;
   }
 }
 @media only screen and (max-width: 576px) {
