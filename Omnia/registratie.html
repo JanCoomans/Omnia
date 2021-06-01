@@ -17,7 +17,7 @@
     <title>Registration</title>
 </head>
 <body>
-<header class="container-fluid">
+<header class="container-fluid fixed-top">
     <div class="row">
         <div class="col-1"></div>
         <div class="col-10 px-0 d-flex justify-content-between py-3">
@@ -83,56 +83,56 @@
     <div class="container-fluid">
         <div class="row flex-column bg-primary py-5" id="contact">
             <div class="col-5 mx-auto mb-1 mt-4">
-                <h1 class="text-center font-titillium-web font-weight-bold">REGISTER</h1>
+                <h1 class="text-center">REGISTER</h1>
             </div>
             <div class="col-md-7"></div>
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row mt-5">
+        <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 bg-black pb-5 rounded-left text-center" id="block_1">
-                            <h2 class="mt-10 font-titillium-web font-weight-semibold">WELCOME</h2>
-                            <p class="font-oxygen">Make an account</p>
+                            <h2>WELCOME</h2>
+                            <p>Make an account</p>
                         </div>
                         <div class="col-md-6 bg-tertiary pb-5 rounded-right" id="block_2">
-                            <h3 id="text" class="text-center mt-3 mb-3 font-titillium-web font-weight-bold">Make an account</h3>
+                            <h3 id="text" class="text-center mt-3 mb-3">Make an account</h3>
                             <form>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group" id="firstName">
-                                            <label for="fname" id="fnameLabel" class="font-oxygen font-weight-bold">First name*</label> <br>
+                                            <label for="fname" id="fnameLabel">First name*</label> <br>
                                             <input type="text" id="fname" placeholder="First name" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group" id="surName">
-                                            <label for="fname" id="snameLabel" class="font-oxygen font-weight-bold">Last name*</label> <br>
+                                            <label for="fname" id="snameLabel">Last name*</label> <br>
                                             <input type="text" id="sname" placeholder="Last name" class="form-control" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group" id="email">
-                                    <label for="emailAdress" id="emailLabel" class="font-oxygen font-weight-bold">Email address*</label>
+                                    <label for="emailAdress" id="emailLabel">Email address*</label>
                                     <input type="email" class="form-control" id="emailAdress" aria-describedby="emailHelp" placeholder="Email adres">
                                     <small id="emailText" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                 </div>
                                 <div class="form-group">
-                                    <label for="password" class="font-oxygen font-weight-bold">Password*</label>
+                                    <label for="password">Password*</label>
                                     <input type="password" class="form-control" id="password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <label for="repeatPassword" class="font-oxygen font-weight-bold">Repeat password*</label>
+                                    <label for="repeatPassword">Repeat password*</label>
                                     <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat password">
                                 </div>
                                 <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="checkTerms">
-                                    <label class="form-check-label" for="checkTerms" class="font-oxygen font-weight-bold">I have read the privacy-policy and agree</label>
+                                    <label class="form-check-label" for="checkTerms">I have read the privacy-policy and agree</label>
                                 </div>
-                                <button type="button" class="btn btn-secondary font-titillium-web" id="register">Register</button>
+                                <button type="button" class="btn btn-omnia" id="register">Register</button>
                             </form>
                         </div>
                     </div>
@@ -142,9 +142,8 @@
         </div>
     </div>
 </main>
-
 <footer>
-    <div id="footer-top" class="bg-primary">
+    <div id="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center"> <!--Left-->
@@ -156,20 +155,19 @@
                     </ul>
                 </div>
                 <div class="col-md-4 text-center"> <!--Middle-->
-                    <img id="footer-logo" class="mx-auto mt-4" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
+                    <img id="footer-logo" class="mx-auto" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
                     <ul id="social" class="p-0 mt-4">
                         <li class="social-size"><a href="https://www.facebook.com/OmniaConsole" target="_blank" aria-hidden="true"><img src="assets/img/facebook.png" alt="Facebook logo"></a></li>
                         <li class="social-size"><a href="https://www.instagram.com/omnia_console/" target="_blank" aria-hidden="true"><img src="assets/img/instagram.png" alt="Instagram logo"></a></li>
                         <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg" target="_blank" aria-hidden="true"><img src="assets/img/youtube.png" alt="YouTube logo"></a></li>
                     </ul>
-                    <div class="col bg-secondary mx-auto my-4 footer-line-decoration-verti"></div>
-                    <button onclick="location = './contact.html'" class="btn bg-secondary px-5 py-2 mb-5" type="button">CONTACT</button>
+                    <div class="col bg-secondary mx-auto my-3 footer-line-decoration-verti"></div>
+                    <button id="footer-contact-button" class="btn bg-secondary px-5 py-2" type="button">CONTACT</button>
                 </div>
                 <div class="col-md-4 text-center"> <!--Right-->
                     <div class="col bg-secondary mx-auto mt-5 my-3 footer-line-decoration-hori"></div>
-                    <ul class="list-unstyled my-5">
+                    <ul class="list-unstyled mt-5">
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./index.html">About</a></li>
                         <li><a href="./product.html">Product</a></li>
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
@@ -177,10 +175,10 @@
             </div>
         </div>
     </div>
-    <div id="footer-bottom" class="bg-black text-white">
+    <div id="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center pb-2 pt-3">
+                <div class="col-md-12 text-center my-4">
                     <p>© 2021 Omnia. All rights reserved.</p> <!--This footer caused me many baguette but it isn't bread -Robbe-->
                 </div>
             </div>

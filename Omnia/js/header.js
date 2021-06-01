@@ -8,6 +8,7 @@ function loadHandler(){
 }
 
 function shoppingCart(){
+<<<<<<< HEAD
     let shoppingCart = document.getElementById("overlay");
     let shoppingNumber = localStorage.getItem("shoppingCart");
     if (shoppingNumber > 0){
@@ -17,6 +18,11 @@ function shoppingCart(){
         }
         shoppingCart.appendChild(document.createTextNode(shoppingNumber))
     }
+=======
+    let shoppingNumber = document.getElementById("overlay");
+
+    shoppingNumber.appendChild(document.createTextNode(localStorage.getItem("shoppingCart")))
+>>>>>>> parent of 2bc286b (Merge branch 'main' of https://github.com/friscit/Omnia into main)
 }
 
 function toggleSearchBar() {

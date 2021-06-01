@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/product.css"><!-- Edit as needed -->
-    <script defer src="./js/header.js"></script>
-    <script defer src="./js/product.js"></script>
+    <script defer src="./js/index.js"></script><!-- Edit as needed -->
 </head>
 <body>
 <header class="container-fluid fixed-top">
@@ -35,17 +34,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li id="header-first" class="nav-item active py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./index.html">Home </a>
+                        <li id="header-first" class="nav-item py-1">
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./about.html">About</a>
                         </li>
-                        <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product<span class="sr-only">(current)</span></a>
+                        <li class="nav-item py-1 active">
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./contact.html">Contact</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -60,12 +59,11 @@
                                 </button>
                             </form>
                         </li>
-                        <li class="position-relative">
+                        <li>
                             <button id="header-cart_button"
                                     class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
-                                    type="button" onclick="window.location.href='product.html'">
+                                    type="button" onclick="window.location.href='#'">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-                                <div id="overlay" class="text-white bg-black"></div>
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
