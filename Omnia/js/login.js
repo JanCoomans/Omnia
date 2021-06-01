@@ -1,4 +1,3 @@
-/*Dit is een testcomment please deleted*/
 let klanten = [
     {naam:'Soons',voornaam:'Nick',email:'Nick.Soons@omnia-console.com', password:'NS1112'},
     {naam: "Janssens", voornaam: "Jorne", email: "Jorne.Janssens@omnia-console.com", password: "JJ1806"},
@@ -21,13 +20,13 @@ function controleAccount(){
         // else {
         //     console.log("Failure");
         // }
-    if (gebruikersnaam == klanten.email){
+    if (gebruikersnaam === klanten.email){
         console.log("email is oke")
     }
     else{
         console.log("email is niet oke")
     }
-    if (password == klanten.password){
+    if (password === klanten.password){
         console.log("password is oke")
     }
     else{

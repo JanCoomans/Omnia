@@ -1,4 +1,3 @@
-/*Dit is een testcomment please deleted*/
 document.getElementById("header-search-input").style.display = "none";
 document.getElementById("header-search-button").addEventListener("click", toggleSearchBar);
 

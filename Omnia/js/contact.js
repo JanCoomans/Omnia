@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-/*Dit is een testcomment please deleted*/
 /*initial empty variables*/
 let FirstNameCheck = null
 let LastNameCheck = null
@@ -70,5 +68,3 @@ function SendMail(){
         /*Hier moet een error*/
     }
 }
-=======
->>>>>>> parent of 727c711 (Merge branch 'main' of https://github.com/friscit/Omnia into main)

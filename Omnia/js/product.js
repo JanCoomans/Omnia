@@ -1,4 +1,3 @@
-/*Dit is een testcomment please deleted*/
 window.addEventListener('load', loadHandler);
 
 function loadHandler(){

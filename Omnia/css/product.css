@@ -1,4 +1,3 @@
-/*Dit is een testcomment please deleted*/
 body {
     background-color: #fff;
     width: 100%;
@@ -45,24 +44,4 @@ body {
 
 .glow-tertiary {
     box-shadow: 0 0 1vw #E5E5E5;
-<<<<<<< HEAD
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-}
->>>>>>> ec803ccc2f95e213ec577e1f79370c4a8dda3d85
-=======
->>>>>>> parent of 44f5133 (Merge branch 'main' of https://github.com/friscit/Omnia into main)
-=======
->>>>>>> parent of 44f5133 (Merge branch 'main' of https://github.com/friscit/Omnia into main)
-=======
-
-#overlay{
-    position: absolute;
-    display: none;
-    bottom: 0;
-    right: 0;
-}
->>>>>>> parent of 727c711 (Merge branch 'main' of https://github.com/friscit/Omnia into main)
