@@ -56,6 +56,7 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 #overlay{
   position: absolute;
@@ -64,6 +65,8 @@ body {
 }
 
 >>>>>>> ec803ccc2f95e213ec577e1f79370c4a8dda3d85
+=======
+>>>>>>> parent of 44f5133 (Merge branch 'main' of https://github.com/friscit/Omnia into main)
 @media only screen and (max-width: 768px) {
   #specificationsConsoleImage{
     width: 90%!important;
