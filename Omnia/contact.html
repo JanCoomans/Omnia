@@ -10,6 +10,8 @@
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
+    <!--css files copied from index.html-->
+    <link rel="stylesheet" href="./css/bootstrap-editor.css">
     <!-- Adobe fonts: Oxygen - Titillium-web - Ubuntu -->
     <link rel="stylesheet" href="https://use.typekit.net/eod0ust.css">
     <!--color css file-->
@@ -19,10 +21,6 @@
     <link rel="stylesheet" href="./css/header.css">
     <script defer src="./js/contact.js"></script>
     <link rel="stylesheet" href="css/footer.css">
-    <!--css files copied from index.html-->
-    <link rel="stylesheet" href="./css/bootstrap-editor.css">
-    <script src="js/header.js"></script>
-
 </head>
 <body>
 <!--header copied from the index.html
@@ -35,15 +33,13 @@
                 <img id="header-logo" src="./assets/img/omnia_logo_horizontal.png" alt="Omnia logo">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li id="header-first" class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        <li id="header-first" class="nav-item active py-1">
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./about.html">About</a>
@@ -52,33 +48,25 @@
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./contact.html">Contact</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li>
                             <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
-                                <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
-                                       placeholder="Search" aria-label="Search">
-                                <button id="header-search-button"
-                                        class="btn d-flex align-items-center justify-content-center p-1 btn-header"
-                                        type="button">
+                                <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search" placeholder="Search" aria-label="Search">
+                                <button id="header-search-button" class="btn d-flex align-items-center justify-content-center p-1 btn-header" type="button">
                                     <img src="./assets/img/search_icon_white.png" alt="Search Icon">
                                 </button>
                             </form>
                         </li>
-                        <li class="position-relative">
-                            <button id="header-cart_button"
-                                    class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
-                                    type="button" onclick="window.location.href='product.html'">
+                        <li>
+                            <button id="header-cart_button" class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header" type="button" onclick="window.location.href='#'">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-                                <div id="overlay" class="bg-secondary font-weight-bold"></div>
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
-                            <button id="header-profile_button"
-                                    class="btn d-flex float-right align-items-center justify-content-center ml-1 p-2 btn-header"
-                                    type="button" onclick="window.location.href='./login.html'">
+                            <button id="header-profile_button" class="btn d-flex float-right align-items-center justify-content-center ml-1 p-2 btn-header" type="button" onclick="window.location.href='./login.html'">
                                 <img src="./assets/img/profile_icon_white.png" alt="Shopping cart Icon">
                             </button>
                         </li>
@@ -152,14 +140,12 @@
                                                 <div class="col-6">
                                                     <div class="form-group">
                                                         <label for="FirstName" class="font-weight-bold font-oxygen">First name *</label>
-                                                        <div id="ErrorFirstName"></div>
                                                         <input type="text" class="form-control" id="FirstName" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="form-group">
                                                         <label for="LastName" class="font-weight-bold font-oxygen">Last name *</label>
-                                                        <div id="ErrorLastName"></div>
                                                         <input type="text" class="form-control" id="LastName" required>
                                                     </div>
                                                 </div>
@@ -168,34 +154,30 @@
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="Email" class="font-weight-bold font-oxygen">Email *</label>
-                                                <div id="ErrorEmail"></div>
                                                 <input type="email" class="form-control" id="Email" required>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="Phone" class="font-weight-bold font-oxygen">Phone</label>
-                                                <div id="ErrorPhone"></div>
                                                 <input type="number" class="form-control" id="Phone">
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <label for="Message" class="font-weight-bold font-oxygen">Your message *</label>
-                                                <div id="ErrorMessage"></div>
                                                 <textarea class="form-control" id="Message" rows="3" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="Check" required>
+                                                <input class="form-check-input" type="checkbox" id="Check">
                                                 <label class="form-check-label font-weight-bold font-oxygen" for="Check">
                                                     I have read the privacy-policy and agree
                                                 </label>
-                                                <div id="ErrorCheck"></div>
                                             </div>
                                             <div class="col-12 pt-3">
-                                                <button type="submit" id="button" class="btn btn-secondary ml-n3 font-titillium-web">Send</button>
+                                                <button type="submit" class="btn btn-secondary ml-n3 font-titillium-web">Send</button>
                                             </div>
                                         </div>
                                     </div>
@@ -214,8 +196,8 @@
 
 <!--footer for the contact page copied from the index.html
     Jorne Janssens-->
-<footer>
-    <div id="footer-top" class="bg-primary font-titillium-web">
+<footer class="pt-5">
+    <div id="footer-top" class="bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center"> <!--Left-->
@@ -227,18 +209,20 @@
                     </ul>
                 </div>
                 <div class="col-md-4 text-center"> <!--Middle-->
-                    <img id="footer-logo" class="mx-auto mt-4" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
+                    <img id="footer-logo" class="mx-auto" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
                     <ul id="social" class="p-0 mt-4">
                         <li class="social-size"><a href="https://www.facebook.com/OmniaConsole" target="_blank" aria-hidden="true"><img src="assets/img/facebook.png" alt="Facebook logo"></a></li>
                         <li class="social-size"><a href="https://www.instagram.com/omnia_console/" target="_blank" aria-hidden="true"><img src="assets/img/instagram.png" alt="Instagram logo"></a></li>
                         <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg" target="_blank" aria-hidden="true"><img src="assets/img/youtube.png" alt="YouTube logo"></a></li>
                     </ul>
                     <div class="col bg-secondary mx-auto my-4 footer-line-decoration-verti"></div>
-                    <button onclick="location = './contact.html'" class="font-titillium-web button btn btn-secondary px-5 py-2 mb-5" type="button">CONTACT</button>
+                    <button onclick="location.href = './contact.html'" class="btn bg-secondary px-5 py-2" type="button">
+                        CONTACT
+                    </button>
                 </div>
                 <div class="col-md-4 text-center"> <!--Right-->
                     <div class="col bg-secondary mx-auto mt-5 my-3 footer-line-decoration-hori"></div>
-                    <ul class="list-unstyled my-5">
+                    <ul class="list-unstyled mt-5">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./index.html">About</a></li>
                         <li><a href="./product.html">Product</a></li>
@@ -248,11 +232,12 @@
             </div>
         </div>
     </div>
-    <div id="footer-bottom" class="bg-black text-white font-oxygen">
+    <div id="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center pb-2 pt-3">
-                    <p>© 2021 Omnia. All rights reserved.</p> <!--This footer caused me many baguette but it isn't bread -Robbe-->
+                <div class="col-md-12 text-center mt-4">
+                    <p>© 2021 Omnia. All rights reserved.</p>
+                    <!--This footer caused me many baguette but it isn't bread -Robbe-->
                 </div>
             </div>
         </div>

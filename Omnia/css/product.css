@@ -46,3 +46,10 @@ body {
 .glow-tertiary {
     box-shadow: 0 0 1vw #E5E5E5;
 }
+
+#overlay{
+    position: absolute;
+    display: none;
+    bottom: 0;
+    right: 0;
+}
