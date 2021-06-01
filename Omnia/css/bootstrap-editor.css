@@ -1,7 +1,8 @@
 :root{
-    --primary:#14213D; /* blue */
+    --primary:#1a2536; /* blue */
     --secondary:#fca311; /* yellow */
     --tertiary:#e5e5e5; /* gray */
+    --tertiary-dark:#a9a9a9; /* dark gray */
     --black:#000; /* black */
     --white:#fff; /* white */
 }
@@ -52,6 +53,8 @@ a.text-primary:focus,a.text-primary:hover{color:#0056b3!important}
 a.text-secondary:focus,a.text-secondary:hover{color:#494f54!important}
 .text-tertiary{color:var(--tertiary)!important}
 a.text-tertiary:focus,a.text-tertiary:hover{color:#494f54!important}
+.text-tertiary-dark{color:var(--tertiary-dark)!important}
+a.text-tertiary-dark:focus,a.text-tertiary-dark:hover{color:#a9a9a9!important}
 
 /* Border color */
 .border-primary{border-color:var(--primary)!important}
@@ -62,7 +65,6 @@ a.text-tertiary:focus,a.text-tertiary:hover{color:#494f54!important}
 .mt-6{margin-top:6rem!important}
 .mb-6{margin-bottom:6rem!important}
 .mb-10{margin-bottom:10rem!important}
-
 .mt-10{margin-top:10rem!important}
 
 /* Paddings */
