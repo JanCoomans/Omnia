@@ -1,3 +1,4 @@
+/*Dit is een testcomment please deleted*/
 let klanten = [
     {naam:'Soons',voornaam:'Nick',email:'Nick.Soons@omnia-console.com', password:'NS1112'},
     {naam: "Janssens", voornaam: "Jorne", email: "Jorne.Janssens@omnia-console.com", password: "JJ1806"},
