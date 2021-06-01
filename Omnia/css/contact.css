@@ -98,3 +98,11 @@ footer #logo_footer {
 .btn-secondary {
     width: 125px;
 }
+
+/*This makes Icons disappear on tinier phones
+  Jorne Janssens*/
+@media only screen and (max-width: 354px) {
+    .d-md-none{
+        display: none;
+    }
+}

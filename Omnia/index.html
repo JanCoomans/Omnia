@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css"><!-- Edit as needed -->
     <script defer src="./js/index.js"></script><!-- Edit as needed -->
+    <script defer src="./js/header.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="contact.html">Contact</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -59,11 +60,12 @@
                                 </button>
                             </form>
                         </li>
-                        <li>
+                        <li class="position-relative">
                             <button id="header-cart_button"
                                     class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
-                                    type="button" onclick="window.location.href='#'">
+                                    type="button" onclick="window.location.href='product.html'">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
+                                <div id="overlay" class="text-white bg-black"></div>
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
