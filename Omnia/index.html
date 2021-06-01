@@ -97,11 +97,21 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-6"><img src="./assets/img/console_front_view.png" alt="Console"></div>
-                    <div class="col-6 text-center">
-                        <h4 class="font-titillium-web font-weight-semibold">OMNIA console</h4>
-                        <button id="addShopItem" type="button" class="btn btn-primary">+</button>
-                        <div id="shopItemCount" type="button" class="px-2 btn btn-primary"></div>
-                        <button id="removeShopItem" type="button" class="btn btn-primary">-</button>
+                    <div class="col-6 text-center d-flex align-items-center justify-content-center">
+                        <div>
+                            <h4 class="font-titillium-web font-weight-semibold">OMNIA console</h4>
+                            <div class="row justify-content-around">
+                                <div class="col-3">
+                                    <button id="addShopItem" class="btn btn-primary w-100">+</button>
+                                </div>
+                                <div class="col-xs-3 col-4">
+                                    <div id="shopItemCount" class="bg-primary d-inline-block text-white w-100 h-100"></div>
+                                </div>
+                                <div class="col-3">
+                                    <button id="removeShopItem" class="btn btn-primary w-100">-</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
