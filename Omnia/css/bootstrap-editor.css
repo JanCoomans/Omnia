@@ -45,6 +45,9 @@ a.bg-black:focus,a.bg-tertiary:hover,button.bg-tertiary:focus,button.bg-tertiary
 .btn-tertiary:not(:disabled):not(.disabled).active,.btn-tertiary:not(:disabled):not(.disabled):active,.show>.btn-tertiary.dropdown-toggle{color:#fff;background-color:#0062cc;border-color:#005cbf}
 .btn-tertiary:not(:disabled):not(.disabled).active:focus,.btn-tertiary:not(:disabled):not(.disabled):active:focus,.show>.btn-tertiary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}.btn-secondary{color:#fff;background-color:#6c757d;border-color:#6c757d}
 
+.btn-reverse{color:var(--secondary)!important;background-color:#fff!important;border-color:var(--secondary)!important}
+.btn-reverse:hover{color:#000;background-color:var(--secondary)!important;border-color:var(--secondary)!important;border-width: 0px}
+
 /* Text color */
 /* TODO: add focus / hover color */
 .text-primary{color:var(--primary)!important}
@@ -136,4 +139,13 @@ h6 {font-size:1rem;}
     h4 {font-size:1.2rem;}
     h5 {font-size:1.1rem;}
     h6 {font-size:1rem;}
+}
+
+#overlay{
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
 }
