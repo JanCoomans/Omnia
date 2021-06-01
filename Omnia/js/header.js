@@ -7,9 +7,12 @@ function loadHandler(){
 }
 
 function shoppingCart(){
-    let shoppingNumber = document.getElementById("overlay");
-
-    shoppingNumber.appendChild(document.createTextNode(localStorage.getItem("shoppingCart")))
+    let shoppingCart = document.getElementById("overlay");
+    let shoppingNumber = localStorage.getItem("shoppingCart");
+    if (shoppingNumber > 0){
+        shoppingCart.style.display = "unset";
+        shoppingCart.appendChild(document.createTextNode(shoppingNumber))
+    }
 }
 
 function toggleSearchBar() {
