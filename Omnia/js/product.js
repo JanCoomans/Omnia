@@ -1,7 +1,11 @@
 window.addEventListener('load', loadHandler);
 
 function loadHandler(){
-    document.getElementsByClassName("pre-order").addEventListener("click", preOrder);
+    let buyButtons = document.getElementsByClassName("pre-order");
+    for (let i = 0; i < buyButtons.length; i++){
+        buyButtons[i].addEventListener("click", preOrder);
+    }
+    //order.forEach(element => {element.addEventListener("click", preOrder);})
 }
 
 function preOrder(){
