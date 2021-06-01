@@ -55,5 +55,3 @@ function toggleSearchBar() {
         document.location.href = "./" + input + ".html";
     }
 }
-
-
