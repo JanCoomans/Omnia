@@ -95,8 +95,8 @@ footer #logo_footer {
 }
 
 /*This is to give the submit button a fixed width rather then a responsive width*/
-.btn-secondary {
-    width: 125px;
+#button {
+    width: 115px;
 }
 
 /*This makes Icons disappear on tinier phones
