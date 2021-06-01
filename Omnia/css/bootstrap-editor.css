@@ -140,4 +140,16 @@ h6 {font-size:1rem;}
     h4 {font-size:1.2rem;}
     h5 {font-size:1.1rem;}
     h6 {font-size:1rem;}
+<<<<<<< HEAD
+=======
+}
+
+#overlay{
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+>>>>>>> parent of 7b40e95 (Jan zn code gered)
 }
