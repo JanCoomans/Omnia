@@ -20,13 +20,13 @@ function controleAccount(){
         // else {
         //     console.log("Failure");
         // }
-    if (gebruikersnaam == klanten.email){
+    if (gebruikersnaam === klanten.email){
         console.log("email is oke")
     }
     else{
         console.log("email is niet oke")
     }
-    if (password == klanten.password){
+    if (password === klanten.password){
         console.log("password is oke")
     }
     else{
