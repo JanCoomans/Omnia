@@ -54,6 +54,13 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 
+#overlay{
+  position: absolute;
+  display: none;
+  bottom: 0;
+  right: 0;
+}
+
 @media only screen and (max-width: 768px) {
   #specificationsConsoleImage{
     width: 90%!important;
