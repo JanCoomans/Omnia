@@ -22,4 +22,5 @@ function checkCartItems(){
         shoppingNumber = 1;
     }
     localStorage.setItem("shoppingCart", shoppingNumber);
+    shoppingCart();
 }

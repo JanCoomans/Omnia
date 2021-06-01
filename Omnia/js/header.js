@@ -11,6 +11,9 @@ function shoppingCart(){
     let shoppingNumber = localStorage.getItem("shoppingCart");
     if (shoppingNumber > 0){
         shoppingCart.style.display = "unset";
+        if (shoppingCart.hasChildNodes()){
+            shoppingCart.removeChild(shoppingCart.firstChild);
+        }
         shoppingCart.appendChild(document.createTextNode(shoppingNumber))
     }
 }
