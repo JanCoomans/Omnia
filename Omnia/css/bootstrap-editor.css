@@ -140,14 +140,33 @@ h6 {font-size:1rem;}
     h4 {font-size:1.2rem;}
     h5 {font-size:1.1rem;}
     h6 {font-size:1rem;}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ec803ccc2f95e213ec577e1f79370c4a8dda3d85
 }
 
 #overlay{
     position: absolute;
     display: none;
+<<<<<<< HEAD
     border-radius: 20%;
     top: -0.4em;
     right: -0.4em;
     padding-left: 2px;
     padding-right: 2px;
+=======
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7b40e95 (Jan zn code gered)
+=======
+>>>>>>> parent of 7b40e95 (Jan zn code gered)
+=======
+>>>>>>> parent of 7b40e95 (Jan zn code gered)
+>>>>>>> ec803ccc2f95e213ec577e1f79370c4a8dda3d85
 }
