@@ -144,8 +144,9 @@ h6 {font-size:1rem;}
 #overlay{
     position: absolute;
     display: none;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-    bottom: 0;
-    right: 0;
+    border-radius: 20%;
+    top: -0.4em;
+    right: -0.4em;
+    padding-left: 2px;
+    padding-right: 2px;
 }
