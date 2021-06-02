@@ -37,13 +37,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li id="header-first" class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./about.html">About</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./product.html">Product</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
                         </li>
                         <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./contact.html">Contact</a>
@@ -66,7 +66,7 @@
                                     class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
                                     type="button" data-toggle="modal" data-target="#exampleModal">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-                                <div id="overlay" class="bg-secondary font-weight-bold"></div>
+                                <div id="shoppingCartLabel" class="bg-secondary font-weight-bold"></div>
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
@@ -83,9 +83,8 @@
         <div class="col-1"></div>
     </div>
 </header>
-
 <!-- Modal -->
-<header class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<header class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -96,7 +95,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-6"><img src="./assets/img/console_front_view.png" alt="Console"></div>
+                    <div class="col-6 pr-0 d-flex align-items-center"><img src="./assets/img/console_front_view.png" alt="Console"></div>
                     <div class="col-6 text-center d-flex align-items-center justify-content-center">
                         <div>
                             <h4 class="font-titillium-web font-weight-semibold">OMNIA console</h4>
@@ -111,6 +110,7 @@
                                     <button id="addShopItem" class="btn btn-primary w-100">+</button>
                                 </div>
                             </div>
+                            <h6 class="mb-0 mt-1">€320 x 5 = 1600</h6>
                         </div>
                     </div>
                 </div>
@@ -122,6 +122,8 @@
         </div>
     </div>
 </header>
+
+
     <main>
         <section id="top">
             <div class="row bg-primary">
@@ -314,7 +316,7 @@
                                 <td class="p-3">Dolby digital 5.1</td>
                             </tr>
                         </table>
-                        <button class="pre-order font-titillium-web btn btn bg-white border-secondary px-5 py-2" type="button">Pre-Order</button>
+                        <button id="orderBasic" class="font-titillium-web btn btn bg-white border-secondary px-5 py-2" type="button">Pre-Order</button>
                     </div>
                     <div class="col-md-3 text-center border border-secondary py-5 glow-secondary">
                         <h4 class="mb-4 font-weight-semibold">PRO</h4>
@@ -341,7 +343,7 @@
                                 <td class="p-3">Dolby digital 5.1</td>
                             </tr>
                         </table>
-                        <button class="pre-order btn font-titillium-web button btn-secondary px-5 py-2" type="button">Pre-Order</button>
+                        <button id="orderPro"  class="btn font-titillium-web button btn-secondary px-5 py-2" type="button">Pre-Order</button>
                     </div>
                     <div class="col-md-3 text-center border border-tertiary py-5 my-4 glow-tertiary">
                         <h4 class="mb-4 font-weight-semibold">PREMIUM</h4>
@@ -364,7 +366,7 @@
                                 <td class="p-3">Dolby digital 5.1</td>
                             </tr>
                         </table>
-                        <button class="pre-order font-titillium-web btn bgwhite border-secondary px-5 py-2" type="button">Pre-Order</button>
+                        <button id="orderPremium" class="font-titillium-web btn bgwhite border-secondary px-5 py-2" type="button">Pre-Order</button>
                     </div>
                 </div>
         </section>

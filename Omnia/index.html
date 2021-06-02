@@ -66,7 +66,7 @@
                                     class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
                                     type="button" data-toggle="modal" data-target="#exampleModal">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-                                <div id="overlay" class="bg-secondary font-weight-bold"></div>
+                                <div id="shoppingCartLabel" class="bg-secondary font-weight-bold"></div>
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
@@ -85,7 +85,7 @@
 </header>
 
 <!-- Modal -->
-<header class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<header class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -96,7 +96,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-6"><img src="./assets/img/console_front_view.png" alt="Console"></div>
+                    <div class="col-6 pr-0 d-flex align-items-center"><img src="./assets/img/console_front_view.png" alt="Console"></div>
                     <div class="col-6 text-center d-flex align-items-center justify-content-center">
                         <div>
                             <h4 class="font-titillium-web font-weight-semibold">OMNIA console</h4>
@@ -111,6 +111,7 @@
                                     <button id="addShopItem" class="btn btn-primary w-100">+</button>
                                 </div>
                             </div>
+                            <h6 class="mb-0 mt-1">€320 x 5 = 1600</h6>
                         </div>
                     </div>
                 </div>
@@ -300,7 +301,7 @@
                         <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg" target="_blank" aria-hidden="true"><img src="assets/img/youtube.png" alt="YouTube logo"></a></li>
                     </ul>
                     <div class="col bg-secondary mx-auto my-4 footer-line-decoration-verti"></div>
-                    <button onclick="location = './contact.html'" class="font-titillium-web button btn btn-secondary px-5 py-2 mb-5" type="button">CONTACT</button>
+                    <button onclick="window.location.href='./contact.html'" class="font-titillium-web button btn btn-secondary px-5 py-2 mb-5" type="button">CONTACT</button>
                 </div>
                 <div class="col-md-4 text-center"> <!--Right-->
                     <div class="col bg-secondary mx-auto mt-5 my-3 footer-line-decoration-hori"></div>

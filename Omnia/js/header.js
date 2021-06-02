@@ -1,16 +1,10 @@
 window.addEventListener('load', loadHandler);
 
 function loadHandler(){
-    let shopItemCount = getShopItems();
-    shoppingCart(shopItemCount);
-
     document.getElementById("header-search-input").style.display = "none";
     document.getElementById("header-search-button").addEventListener("click", toggleSearchBar);
 
-
-    document.getElementById("addShopItem").addEventListener("click", function (){shopItemCount++; refreshShopItems(shopItemCount)} );
-    document.getElementById("removeShopItem").addEventListener("click", function (){if (shopItemCount > 0){shopItemCount--;refreshShopItems(shopItemCount)}});
-    document.getElementById("saveShopItems").addEventListener("click", function (){saveShopItems(shopItemCount)});
+    updateShoppingCartLabel();
 }
 
 function toggleSearchBar() {
@@ -28,8 +22,10 @@ function toggleSearchBar() {
     }
 }
 
+// Old code:  I need this as cheat cheet for new code.
+/*
 function shoppingCart(shopItemCount){
-    let shoppingCart = document.getElementById("overlay");
+    let shoppingCart = document.getElementById("shoppingCartLabel");
     if (shopItemCount > 0){
         shoppingCart.style.display = "unset";
         if (shoppingCart.hasChildNodes()){
@@ -66,4 +62,50 @@ function saveShopItems(shopItemCount){
     }
     shoppingCart(shopItemCount);
 }
+*/
 
+
+function updateShoppingCart(){}
+
+function updateShoppingCartLabel(){
+    let shoppingCartLabel = document.getElementById("shoppingCartLabel");
+    let labelNumber = getShoppingListLength();
+    if (labelNumber > 0){
+        if (shoppingCartLabel.hasChildNodes()){
+            shoppingCartLabel.removeChild(shoppingCartLabel.firstChild);
+        }
+        shoppingCartLabel.appendChild(document.createTextNode(labelNumber))
+        shoppingCartLabel.style.display = "unset";
+    }
+    else{
+        shoppingCartLabel.style.display = "none";
+    }
+}
+
+function getShoppingListLength(){ // !! Games not implemented
+    let shoppingList = JSON.parse(localStorage.shoppingList)
+    let shoppingListLength = 0;
+    consoleCount();
+
+    function consoleCount(){
+        let consoleList = shoppingList["consoles"];
+        for (let key in consoleList){
+            shoppingListLength += consoleList[key]["count"];
+        }
+    }
+
+    function gameCount(){}
+
+    return shoppingListLength;
+}
+
+function SaveShopInLocalStorage(shoppingList){
+    localStorage["shoppingList"] = JSON.stringify(shoppingList);
+}
+
+/* Need for later!
+let buyButtons = document.getElementsByClassName("pre-order");
+    for (let i = 0; i < buyButtons.length; i++){
+        buyButtons[i].addEventListener("click", preOrder);
+    }
+*/
