@@ -47,9 +47,9 @@ function getShoppingList(){
     }
     console.log("Object 'shoppingList' created.")
     return {consoles:
-            {basic:{count: 0, price: 149.99, image: "console_front_view.png"},
-                pro: {count: 0, price: 350.99, image: "console_front_view.png"},
-                premium: {count: 0, price: 280.99, image: "console_front_view.png"}},
+            {basic:{count: 2, price: 149.99, image: "console_front_view.png"},
+                pro: {count: 1, price: 350.99, image: "console_front_view.png"},
+                premium: {count: 5, price: 280.99, image: "console_front_view.png"}},
         games: {}};
 }
 

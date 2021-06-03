@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/about.css"><!-- Edit as needed -->
-    <script defer src="./js/index.js"></script><!-- Edit as needed -->
+    <script defer src="./js/header.js"></script>
 </head>
 <body>
 <header class="container-fluid fixed-top">
@@ -34,16 +34,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li id="header-first" class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item py-1 active">
+                        <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./about.html">About</a>
                         </li>
                         <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="contact.html">Contact</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -58,11 +58,12 @@
                                 </button>
                             </form>
                         </li>
-                        <li>
+                        <li class="position-relative">
                             <button id="header-cart_button"
                                     class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
-                                    type="button" onclick="window.location.href='#'">
+                                    type="button" data-toggle="modal" data-target="#exampleModal">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
+                                <div id="shoppingCartLabel" class="bg-secondary font-weight-bold"></div>
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
@@ -77,6 +78,27 @@
             </nav>
         </div>
         <div class="col-1"></div>
+    </div>
+</header>
+
+<!-- Modal -->
+<header class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Shopping List:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <!-- Auto generate stuff. Don't worry about it. -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="saveShopItems" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
     </div>
 </header>
 <main>

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <script defer src="./js/contact.js"></script>
     <link rel="stylesheet" href="css/footer.css">
+    <script defer src="./js/header.js"></script>
 </head>
 <body>
 <!--header copied from the index.html
@@ -33,13 +34,15 @@
                 <img id="header-logo" src="./assets/img/omnia_logo_horizontal.png" alt="Omnia logo">
             </a>
             <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li id="header-first" class="nav-item active py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        <li id="header-first" class="nav-item py-1">
+                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./about.html">About</a>
@@ -48,25 +51,33 @@
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="contact.html">Contact</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li>
                             <form class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
-                                <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search" placeholder="Search" aria-label="Search">
-                                <button id="header-search-button" class="btn d-flex align-items-center justify-content-center p-1 btn-header" type="button">
+                                <input id="header-search-input" class="form-control mr-sm-2 px-2" type="search"
+                                       placeholder="Search" aria-label="Search">
+                                <button id="header-search-button"
+                                        class="btn d-flex align-items-center justify-content-center p-1 btn-header"
+                                        type="button">
                                     <img src="./assets/img/search_icon_white.png" alt="Search Icon">
                                 </button>
                             </form>
                         </li>
-                        <li>
-                            <button id="header-cart_button" class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header" type="button" onclick="window.location.href='#'">
+                        <li class="position-relative">
+                            <button id="header-cart_button"
+                                    class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
+                                    type="button" data-toggle="modal" data-target="#exampleModal">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
+                                <div id="shoppingCartLabel" class="bg-secondary font-weight-bold"></div>
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
-                            <button id="header-profile_button" class="btn d-flex float-right align-items-center justify-content-center ml-1 p-2 btn-header" type="button" onclick="window.location.href='./login.html'">
+                            <button id="header-profile_button"
+                                    class="btn d-flex float-right align-items-center justify-content-center ml-1 p-2 btn-header"
+                                    type="button" onclick="window.location.href='./login.html'">
                                 <img src="./assets/img/profile_icon_white.png" alt="Shopping cart Icon">
                             </button>
                         </li>
@@ -75,6 +86,27 @@
             </nav>
         </div>
         <div class="col-1"></div>
+    </div>
+</header>
+
+<!-- Modal -->
+<header class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Shopping List:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <!-- Auto generate stuff. Don't worry about it. -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="saveShopItems" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
     </div>
 </header>
 <!--container where all the content of the webpage will be located

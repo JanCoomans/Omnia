@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="./css/registratie.css"><!-- Edit as needed -->
     <script defer src="./js/registratie.js"></script><!-- Edit as needed -->
     <script src="js/header.js"></script>
+    <script defer src="./js/header.js"></script>
     <title>Registration</title>
 
 </head>
 <body>
-<header class="container-fluid">
+<header class="container-fluid fixed-top">
     <div class="row">
         <div class="col-1"></div>
         <div class="col-10 px-0 d-flex justify-content-between py-3">
@@ -63,7 +64,7 @@
                                     class="btn d-flex float-right align-items-center justify-content-center ml-2 p-1 btn-header"
                                     type="button" data-toggle="modal" data-target="#exampleModal">
                                 <img src="./assets/img/shopping_cart_white.png" alt="Shopping cart Icon">
-                                <div id="overlay" class="bg-secondary font-weight-bold"></div>
+                                <div id="shoppingCartLabel" class="bg-secondary font-weight-bold"></div>
                             </button>
                         </li>
                         <li class="form-inline ml-1 my-2 my-lg-0 justify-content-end">
@@ -78,6 +79,27 @@
             </nav>
         </div>
         <div class="col-1"></div>
+    </div>
+</header>
+
+<!-- Modal -->
+<header class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Shopping List:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <!-- Auto generate stuff. Don't worry about it. -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="saveShopItems" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
     </div>
 </header>
 
