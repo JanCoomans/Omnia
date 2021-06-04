@@ -7,7 +7,7 @@ function Validate(){
     let MessageCheck = false;
     let CheckCheck = false;
     /*variables to check input with*/
-    let Mail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    let Mail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     let PhoneNumber = /^\d{10}$/;
     /*getting the values from the form*/
     let FirstName = document.getElementById("FirstName").value;
@@ -182,6 +182,31 @@ function SendMail(){
         if(document.getElementById("valid") != null)
         {
             document.getElementById("valid").remove();
+        }
+        /*removing of previous errors*/
+        if(document.getElementById("Error1") != null)
+        {
+            document.getElementById("Error1").remove();
+        }
+        if(document.getElementById("Error2") != null)
+        {
+            document.getElementById("Error2").remove();
+        }
+        if(document.getElementById("Error3") != null)
+        {
+            document.getElementById("Error3").remove();
+        }
+        if(document.getElementById("Error4") != null)
+        {
+            document.getElementById("Error4").remove();
+        }
+        if(document.getElementById("Error5") != null)
+        {
+            document.getElementById("Error5").remove();
+        }
+        if(document.getElementById("Error6") != null)
+        {
+            document.getElementById("Error6").remove();
         }
 
         let Paragraph = document.createElement("p");
