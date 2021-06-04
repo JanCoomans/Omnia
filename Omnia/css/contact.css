@@ -73,6 +73,7 @@ footer #logo_footer {
 @media only screen and (max-width: 1200px) {
     #iconphone {
         width: 30px;
+        padding-top: 25px;
     }
 
     #iconlocation {
@@ -81,6 +82,7 @@ footer #logo_footer {
 
     #iconmail {
         width: 40px;
+        padding-top: 10px
     }
 
     #block_2 {
@@ -115,7 +117,13 @@ footer #logo_footer {
 /*This makes Icons disappear on tinier phones
   Jorne Janssens*/
 @media only screen and (max-width: 354px) {
-    .d-md-none{
+    #iconlocation{
+        display: none;
+    }
+    #iconphone{
+        display: none;
+    }
+    #iconmail{
         display: none;
     }
 }
