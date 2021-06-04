@@ -29,10 +29,14 @@ function updateShoppingCart(){
 
     let shoppingList = JSON.parse(localStorage.shoppingList);
     let sectionParent = document.getElementById("modalBody");
+    let costContainer = document.getElementById("totalCost");
     while (sectionParent.firstChild) {
         sectionParent.removeChild(sectionParent.lastChild);
     }
-    updateTotalCost(shoppingList);
+    while (costContainer.firstChild) {
+        costContainer.removeChild(costContainer.lastChild);
+    }
+    setSavedTotalCost();
     updateConsoles();
 
     function updateConsoles(){
@@ -40,10 +44,10 @@ function updateShoppingCart(){
         for (let key in shoppingList["consoles"]){
             if (shoppingList["consoles"][key]["count"] > 0){
                 generateSection(shoppingList["consoles"][key], key, "console", index);
-                console.log(`${key} console added to shopping list.`);
                 index++;
             }
         }
+        console.log(`Consoles loaded from shopping list.`);
     }
 
     //function updateGames(){}
@@ -86,7 +90,7 @@ function updateShoppingCart(){
         add.className = "btn btn-primary w-100";
         //add.id = `add-${idNumber}`;
 
-        let seperatorLine= document.createElement("div");
+        let seperatorLine = document.createElement("div");
         seperatorLine.className = "line-seperator bg-tertiary w-75 my-2 mx-auto";
 
         sectionParent.appendChild(row);
@@ -118,7 +122,30 @@ function updateShoppingCart(){
     }
 }
 
-function updateTotalCost(shoppingList){
+function updateTotalCost(price, change){
+    let costContainer = document.getElementById("totalCost");
+    let oldPrice = parseFloat(costContainer.innerHTML.substring(2));
+    let newPrice = oldPrice + (price * change);
+
+    while (costContainer.firstChild) {
+        costContainer.removeChild(costContainer.lastChild);
+    }
+    costContainer.appendChild(document.createTextNode(` €${newPrice.toFixed(2)}`));
+}
+
+function setSavedTotalCost(){
+    let costContainer = document.getElementById("totalCost");
+    let shoppingList = JSON.parse(localStorage.shoppingList);
+    let totalCost = 0;
+    for (let key in shoppingList["consoles"]){
+        let amount = shoppingList["consoles"][key]["count"];
+        let price = shoppingList["consoles"][key]["price"];
+        totalCost += amount*price;
+    }
+    costContainer.appendChild(document.createTextNode(` €${totalCost}`));
+}
+
+function getTotalCost(shoppingList){
 }
 
 function updateShoppingCartLabel(){
@@ -168,6 +195,7 @@ function changeCount(index, price, change){
 
     pricing.removeChild(pricing.lastChild);
     pricing.appendChild(document.createTextNode(`${newProductCount} x ${price} = €${(newProductCount*price).toFixed(2)}`));
+    updateTotalCost(price, change);
 }
 
 function saveShoppingCart(){ // Games not implemented.

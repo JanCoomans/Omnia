@@ -26,8 +26,54 @@ header div[class^='col-'] *{
     height: 48px;
 }
 
+#shoppingCartLabel{
+    position: absolute;
+    display: none;
+    border-radius: 20%;
+    top: -0.4em;
+    right: -0.4em;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.line-seperator{
+    padding: 1px 0 0 0;
+}
+
+#modalCheckout{
+    padding: 12px;
+}
+
+.modalCheckoutItem{
+    margin: 4px;
+}
+
+.modal-button{
+    padding: 6px 12px!important;
+}
+
+#priceContainer{
+    width: 40%;
+}
+#checkoutButtonContainer{
+    width: 60%;
+}
+
 @media only screen and (max-width: 992px) {
     #header-first{
         margin-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 398px) {
+    .modal-button{
+        width: calc(100% - 8px);
+    }
+
+    #closeShopItems{
+        width: calc(40% - 8px);
+    }
+    #saveShopItems{
+        width: calc(60% - 8px);
     }
 }
