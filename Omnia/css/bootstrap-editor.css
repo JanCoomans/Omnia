@@ -150,3 +150,7 @@ h6 {font-size:1rem;}
     padding-left: 2px;
     padding-right: 2px;
 }
+
+.line-seperator{
+    padding: 1px 0 0 0;
+}

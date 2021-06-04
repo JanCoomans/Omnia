@@ -32,6 +32,7 @@ function updateShoppingCart(){
     while (sectionParent.firstChild) {
         sectionParent.removeChild(sectionParent.lastChild);
     }
+    updateTotalCost(shoppingList);
     updateConsoles();
 
     function updateConsoles(){
@@ -39,7 +40,7 @@ function updateShoppingCart(){
         for (let key in shoppingList["consoles"]){
             if (shoppingList["consoles"][key]["count"] > 0){
                 generateSection(shoppingList["consoles"][key], key, "console", index);
-                console.log(`${key} console toegevoegd aan shopping list.`);
+                console.log(`${key} console added to shopping list.`);
                 index++;
             }
         }
@@ -58,8 +59,9 @@ function updateShoppingCart(){
         image.alt = altTag;
 
         let contentParent = document.createElement("div");
-        contentParent.className = "col-6 text-center d-flex align-items-center justify-content-center";
+        contentParent.className = "col-6 text-center d-flex justify-content-center";
         let contentContainer = document.createElement("div");
+        contentContainer.className = "align-self-center";
         let title = document.createElement("h4");
         title.className = "font-titillium-web font-weight-semibold";
         let buttonsContainer = document.createElement("div");
@@ -74,7 +76,7 @@ function updateShoppingCart(){
         remove.className = "btn btn-primary w-100";
         //remove.id = `remove-${idNumber}`;
         let productCountContainer = document.createElement("div");
-        productCountContainer.className = "col-4";
+        productCountContainer.className = "col-3";
         let productCount = document.createElement("div");
         productCount.className = "bg-primary d-inline-block text-white w-100 h-100";
         productCount.id = `productCount-${idNumber}`;
@@ -83,6 +85,9 @@ function updateShoppingCart(){
         let add = document.createElement("button");
         add.className = "btn btn-primary w-100";
         //add.id = `add-${idNumber}`;
+
+        let seperatorLine= document.createElement("div");
+        seperatorLine.className = "line-seperator bg-tertiary w-75 my-2 mx-auto";
 
         sectionParent.appendChild(row);
         row.appendChild(imageParent);
@@ -106,9 +111,14 @@ function updateShoppingCart(){
         productCount.appendChild(document.createTextNode(`${itemObject["count"]}`));
         add.appendChild(document.createTextNode("+"));
 
+        row.appendChild(seperatorLine);
+
         remove.addEventListener("click", function(){changeCount(idNumber, itemObject["price"], -1)})
         add.addEventListener("click", function(){changeCount(idNumber, itemObject["price"], 1)})
     }
+}
+
+function updateTotalCost(shoppingList){
 }
 
 function updateShoppingCartLabel(){
@@ -168,11 +178,11 @@ function saveShoppingCart(){ // Games not implemented.
         let product = productCounters[index];
         let productId = product.id.substring(product.id.indexOf("-")+1);
         consoles[Object.keys(consoles)[productId]]["count"] = parseInt(product.innerHTML);
-        console.log(`Id-${productId} saved in storage.`)
     }
 
     shoppingList.consoles = shoppingList["consoles"];
     localStorage.shoppingList = JSON.stringify(shoppingList);
     updateShoppingCartLabel();
+    console.log(`Shopping list saved in LocalStorage.`)
 }
 
