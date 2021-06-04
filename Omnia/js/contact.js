@@ -1,12 +1,11 @@
-/*initial empty variables*/
-let FirstNameCheck = null;
-let LastNameCheck = null;
-let EmailCheck = null;
-let PhoneCheck = null;
-let MessageCheck = null;
-let CheckCheck = null;
-let HeightBox = 1;
 function Validate(){
+    /*initial empty variables*/
+    let FirstNameCheck = false;
+    let LastNameCheck = false;
+    let EmailCheck = false;
+    let PhoneCheck = false;
+    let MessageCheck = false;
+    let CheckCheck = false;
     /*variables to check input with*/
     let Mail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     let PhoneNumber = /^\d{10}$/;
@@ -19,9 +18,9 @@ function Validate(){
     let Check = document.getElementById("Check").checked;
     let HeightBox = 1;
     /*validation first name*/
-    if(FirstName !== "")
+    if(FirstName.length > 0)
     {
-        let FirstNameCheck = true;
+        FirstNameCheck = true;
     }
     else {
         /*removing of previous errors*/
@@ -39,9 +38,9 @@ function Validate(){
         document.getElementById("ErrorFirstName").style.color = "#f00";
     }
     /*validation last name*/
-    if(LastName !== "")
+    if(LastName.length > 0)
     {
-        let LastNameCheck = true;
+        LastNameCheck = true;
     }
     else {
         /*removing of previous errors*/
@@ -61,7 +60,7 @@ function Validate(){
     /*validation e-mail*/
     if(Email.match(Mail))
     {
-        let EmailCheck = true;
+        EmailCheck = true;
     }
     else {
         /*removing of previous errors*/
@@ -80,7 +79,7 @@ function Validate(){
     }
     /*validation phone*/
     if(Phone.match(PhoneNumber)){
-        let PhoneCheck = true;
+        PhoneCheck = true;
     }else{
         /*removing of previous errors*/
         if(document.getElementById("Error4") != null)
@@ -98,7 +97,7 @@ function Validate(){
     }
     /*validation message*/
     if(Message !== ""){
-        let MessageCheck = true;
+        MessageCheck = true;
     }else{
         /*removing of previous errors*/
         if(document.getElementById("Error5") != null)
@@ -116,7 +115,7 @@ function Validate(){
     }
     /*validation check*/
     if(Check === true){
-        let CheckCheck = true;
+        CheckCheck = true;
     }else{
         /*removing of previous errors*/
         if(document.getElementById("Error6") != null)
@@ -133,22 +132,6 @@ function Validate(){
         document.getElementById("ErrorCheck").style.color = "#f00";
         document.getElementById("Policy").style.color = "#000";
     }
-    console.log(LastNameCheck);
-    console.log(FirstNameCheck);
-    console.log(EmailCheck);
-    console.log(PhoneCheck);
-    console.log(MessageCheck);
-    console.log(CheckCheck);
-    /*checking if all fields give true*/
-    if(LastNameCheck === true && FirstNameCheck === true && EmailCheck === true && PhoneCheck === true && MessageCheck === true && CheckCheck === true){
-        return true;
-    }
-}
-document.getElementById("button").addEventListener("click", SendMail);{
-
-}
-function SendMail(){
-    Validate();
     /*Fixing height of box when errors display*/
     if(FirstNameCheck !== true)
     {
@@ -178,6 +161,22 @@ function SendMail(){
         document.getElementById("block_2").style.height = "auto";
         document.getElementById("block_1").style.height = "auto";
     }
+    console.log(LastNameCheck);
+    console.log(FirstNameCheck);
+    console.log(EmailCheck);
+    console.log(PhoneCheck);
+    console.log(MessageCheck);
+    console.log(CheckCheck);
+    /*checking if all fields give true*/
+    if(LastNameCheck === true && FirstNameCheck === true && EmailCheck === true && PhoneCheck === true && MessageCheck === true && CheckCheck === true){
+        return true;
+    }
+}
+document.getElementById("sendbutton").addEventListener("click", SendMail);{
+
+}
+function SendMail(){
+    Validate();
     if(Validate){
         /*Hier moet de mailto of verzending van de message*/
         /*removing of previous done messages*/
@@ -193,6 +192,5 @@ function SendMail(){
         let Done = document.getElementById("Done");
         Done.appendChild(Paragraph);
         document.getElementById("Done").style.color = "#0F0";
-        console.log(EmailCheck)
     }
 }
