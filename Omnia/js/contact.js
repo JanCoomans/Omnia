@@ -176,8 +176,7 @@ document.getElementById("sendbutton").addEventListener("click", SendMail);{
 
 }
 function SendMail(){
-    Validate();
-    if(Validate){
+    if(Validate()){
         /*Hier moet de mailto of verzending van de message*/
         /*removing of previous done messages*/
         if(document.getElementById("valid") != null)
