@@ -96,9 +96,19 @@
             <div id="modalBody" class="modal-body">
                 <!-- Auto generate stuff. Don't worry about it. -->
             </div>
+            <div id="modalCheckout" class="bg-tertiary">
+                <div class="d-flex align-items-center">
+                    <div id="priceContainer" class="justify-content-center text-center pr-0">
+                        <h5 class="modalCheckoutItem font-oxygen">Total:<span id="totalCost"></span></h5>
+                    </div>
+                    <div id="checkoutButtonContainer" class="pl-0 float-right">
+                        <button type="button" class="btn btn-secondary float-right font-titillium-web modal-button modalCheckoutItem">Check out</button>
+                    </div>
+                </div>
+            </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button id="saveShopItems" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                <button id="closeShopItems" type="button" class="btn btn-secondary font-titillium-web" data-dismiss="modal">Close</button>
+                <button id="saveShopItems" type="button" class="btn btn-primary font-titillium-web" data-dismiss="modal">Save changes</button>
             </div>
         </div>
     </div>
