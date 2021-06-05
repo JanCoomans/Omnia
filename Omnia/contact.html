@@ -42,16 +42,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li id="header-first" class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./index.html">Home
+                                <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./about.html">About</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold"
+                               href="./product.html">Product</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./contact.html">Contact</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold"
+                               href="./contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -104,7 +107,8 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button id="saveShopItems" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                <button id="saveShopItems" type="button" class="btn btn-primary" data-dismiss="modal">Save changes
+                </button>
             </div>
         </div>
     </div>
@@ -134,13 +138,13 @@
                                 </div>
                                 <div class="d-xl-block col-3">
                                     <div class="row d-flex flex-column h-100 align-items-end">
-                                        <div class="pt-2 mb-5 mr-4">
+                                        <div class="pt-2 mb-4 mr-4">
                                             <img id="iconlocation" src="assets/img/icon_location_yellow.png" alt="an icon for location">
                                         </div>
-                                        <div class="pt-5 mt-3 mb-n1 mr-4">
+                                        <div class="pt-5 mt-3 mb-n3 mr-4">
                                             <img id="iconphone" src="assets/img/icon_phone_yellow.png" alt="an icon of a phone">
                                         </div>
-                                        <div class="pt-5 mt-2 mr-4">
+                                        <div class="pt-5 mt-2 mr-3">
                                             <img id="iconmail" src="assets/img/icon_mail_yellow.png" alt="an icon of a letter">
                                         </div>
                                     </div>
@@ -170,51 +174,53 @@
                                         <div class="col-12">
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <div class="form-group">
-                                                        <label for="FirstName" class="font-weight-bold font-oxygen">First name *</label>
+                                                    <label for="FirstName" class="font-weight-bold font-oxygen">First name</label>
+                                                    <div class="form-group" id="ErrorFirstName">
                                                         <input type="text" class="form-control" id="FirstName" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
-                                                    <div class="form-group">
-                                                        <label for="LastName" class="font-weight-bold font-oxygen">Last name *</label>
+                                                    <label for="LastName" class="font-weight-bold font-oxygen">Last name</label>
+                                                    <div class="form-group" id="ErrorLastName">
                                                         <input type="text" class="form-control" id="LastName" required>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="Email" class="font-weight-bold font-oxygen">Email *</label>
+                                            <label for="Email" class="font-weight-bold font-oxygen">Email</label>
+                                            <div class="form-group" id="ErrorEmail">
                                                 <input type="email" class="form-control" id="Email" required>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="Phone" class="font-weight-bold font-oxygen">Phone</label>
+                                            <label for="Phone" class="font-weight-bold font-oxygen">Phone</label>
+                                            <div class="form-group" id="ErrorPhone">
                                                 <input type="number" class="form-control" id="Phone">
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="Message" class="font-weight-bold font-oxygen">Your message *</label>
+                                            <label for="Message" class="font-weight-bold font-oxygen">Your message</label>
+                                            <div class="form-group" id="ErrorMessage">
                                                 <textarea class="form-control" id="Message" rows="3" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="form-check">
+                                            <div class="form-check" id="ErrorCheck">
                                                 <input class="form-check-input" type="checkbox" id="Check">
-                                                <label class="form-check-label font-weight-bold font-oxygen" for="Check">
+                                                <label class="form-check-label font-weight-bold font-oxygen" for="Check" id="Policy">
                                                     I have read the privacy-policy and agree
                                                 </label>
                                             </div>
                                             <div class="col-12 pt-3">
-                                                <button type="submit" class="btn btn-secondary ml-n3 font-titillium-web">Send</button>
+                                                <button type="submit" id="sendbutton" class="btn btn-secondary ml-n3 font-titillium-web">Send
+                                                </button>
+                                                <div id="Done"></div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-1">
+                                        <div class="col-1">
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -243,9 +249,15 @@
                 <div class="col-md-4 text-center"> <!--Middle-->
                     <img id="footer-logo" class="mx-auto" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
                     <ul id="social" class="p-0 mt-4">
-                        <li class="social-size"><a href="https://www.facebook.com/OmniaConsole" target="_blank" aria-hidden="true"><img src="assets/img/facebook.png" alt="Facebook logo"></a></li>
-                        <li class="social-size"><a href="https://www.instagram.com/omnia_console/" target="_blank" aria-hidden="true"><img src="assets/img/instagram.png" alt="Instagram logo"></a></li>
-                        <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg" target="_blank" aria-hidden="true"><img src="assets/img/youtube.png" alt="YouTube logo"></a></li>
+                        <li class="social-size"><a href="https://www.facebook.com/OmniaConsole" target="_blank"
+                                                   aria-hidden="true"><img src="assets/img/facebook.png"
+                                                                           alt="Facebook logo"></a></li>
+                        <li class="social-size"><a href="https://www.instagram.com/omnia_console/" target="_blank"
+                                                   aria-hidden="true"><img src="assets/img/instagram.png"
+                                                                           alt="Instagram logo"></a></li>
+                        <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg"
+                                                   target="_blank" aria-hidden="true"><img src="assets/img/youtube.png"
+                                                                                           alt="YouTube logo"></a></li>
                     </ul>
                     <div class="col bg-secondary mx-auto my-4 footer-line-decoration-verti"></div>
                     <button onclick="location.href = './contact.html'" class="btn bg-secondary px-5 py-2" type="button">
