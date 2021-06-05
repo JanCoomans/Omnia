@@ -9,6 +9,7 @@ body {
 
 #performance {
     background-image: url("../assets/img/bg-performance.png");
+    background-size: cover;
 }
 
 .line-decoration-hori{

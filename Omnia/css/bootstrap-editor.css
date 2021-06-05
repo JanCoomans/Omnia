@@ -71,9 +71,11 @@ a.text-tertiary-dark:focus,a.text-tertiary-dark:hover{color:#a9a9a9!important}
 .mt-10{margin-top:10rem!important}
 .ml-10{margin-left:10rem!important}
 .ml-md-10{margin-left:10rem!important}.ml-md-10{.col-md!important}
-.mx-6{margin-right:6rem!important}.mx-6{--breakpoint-md:768px;!important}
+.mx-6{margin-right:6rem!important}.mx-6{margin-left:6rem!important}
 
 /* Paddings */
+
+.px-6{padding-right:6rem!important}.px-6{padding-left:6rem!important}
 
 /* Width */
 .w-15{width: 15%}
