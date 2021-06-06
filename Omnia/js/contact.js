@@ -1,4 +1,10 @@
-function Validate(){
+function SendMessageDelete() {
+    if(document.getElementById("valid") != null)
+    {
+        document.getElementById("valid").remove();
+    }
+}
+function Validate() {
     /*initial empty variables*/
     let FirstNameCheck = false;
     let LastNameCheck = false;
@@ -18,17 +24,14 @@ function Validate(){
     let Check = document.getElementById("Check").checked;
     let HeightBox = 1;
     /*validation first name*/
-    if(FirstName.length > 0)
-    {
-        FirstNameCheck = true;
+    /*removing of previous errors*/
+    if (document.getElementById("Error1") != null) {
+        document.getElementById("Error1").remove();
     }
-    else {
-        /*removing of previous errors*/
-        if(document.getElementById("Error1") != null)
-        {
-            document.getElementById("Error1").remove();
-        }
-
+    if (FirstName.length > 0) {
+        FirstNameCheck = true;
+    } else {
+        SendMessageDelete()
         let Paragraph = document.createElement("p");
         Paragraph.id = "Error1";
         let Inhoud = document.createTextNode("Fill in your name");
@@ -37,18 +40,15 @@ function Validate(){
         ErrorFirstName.appendChild(Paragraph);
         document.getElementById("ErrorFirstName").style.color = "#f00";
     }
-    /*validation last name*/
-    if(LastName.length > 0)
-    {
-        LastNameCheck = true;
+    /*removing of previous errors*/
+    if (document.getElementById("Error2") != null) {
+        document.getElementById("Error2").remove();
     }
-    else {
-        /*removing of previous errors*/
-        if(document.getElementById("Error2") != null)
-        {
-            document.getElementById("Error2").remove();
-        }
-
+    /*validation last name*/
+    if (LastName.length > 0) {
+        LastNameCheck = true;
+    } else {
+        SendMessageDelete()
         let Paragraph = document.createElement("p");
         Paragraph.id = "Error2";
         let Inhoud = document.createTextNode("Fill in your last name");
@@ -57,18 +57,15 @@ function Validate(){
         ErrorLastName.appendChild(Paragraph);
         document.getElementById("ErrorLastName").style.color = "#f00";
     }
-    /*validation e-mail*/
-    if(Email.match(Mail))
-    {
-        EmailCheck = true;
+    /*removing of previous errors*/
+    if (document.getElementById("Error3") != null) {
+        document.getElementById("Error3").remove();
     }
-    else {
-        /*removing of previous errors*/
-        if(document.getElementById("Error3") != null)
-        {
-            document.getElementById("Error3").remove();
-        }
-
+    /*validation e-mail*/
+    if (Email.match(Mail)) {
+        EmailCheck = true;
+    } else {
+        SendMessageDelete()
         let Paragraph = document.createElement("p");
         Paragraph.id = "Error3";
         let Inhoud = document.createTextNode("Fill in a valid e-mail address");
@@ -77,16 +74,15 @@ function Validate(){
         ErrorEmail.appendChild(Paragraph);
         document.getElementById("ErrorEmail").style.color = "#f00";
     }
+    /*removing of previous errors*/
+    if (document.getElementById("Error4") != null) {
+        document.getElementById("Error4").remove();
+    }
     /*validation phone*/
-    if(Phone.match(PhoneNumber)){
+    if (Phone.match(PhoneNumber)) {
         PhoneCheck = true;
-    }else{
-        /*removing of previous errors*/
-        if(document.getElementById("Error4") != null)
-        {
-            document.getElementById("Error4").remove();
-        }
-
+    } else {
+        SendMessageDelete()
         let Paragraph = document.createElement("p");
         Paragraph.id = "Error4";
         let Inhoud = document.createTextNode("Fill in a valid phone number");
@@ -95,16 +91,15 @@ function Validate(){
         ErrorFirstName.appendChild(Paragraph);
         document.getElementById("ErrorPhone").style.color = "#f00";
     }
+    /*removing of previous errors*/
+    if (document.getElementById("Error5") != null) {
+        document.getElementById("Error5").remove();
+    }
     /*validation message*/
-    if(Message !== ""){
+    if (Message !== "") {
         MessageCheck = true;
-    }else{
-        /*removing of previous errors*/
-        if(document.getElementById("Error5") != null)
-        {
-            document.getElementById("Error5").remove();
-        }
-
+    } else {
+        SendMessageDelete()
         let Paragraph = document.createElement("p");
         Paragraph.id = "Error5";
         let Inhoud = document.createTextNode("Fill in a message");
@@ -113,16 +108,15 @@ function Validate(){
         ErrorFirstName.appendChild(Paragraph);
         document.getElementById("ErrorMessage").style.color = "#f00";
     }
+    /*removing of previous errors*/
+    if (document.getElementById("Error6") != null) {
+        document.getElementById("Error6").remove();
+    }
     /*validation check*/
-    if(Check === true){
+    if (Check === true) {
         CheckCheck = true;
-    }else{
-        /*removing of previous errors*/
-        if(document.getElementById("Error6") != null)
-        {
-            document.getElementById("Error6").remove();
-        }
-
+    } else {
+        SendMessageDelete()
         let Paragraph = document.createElement("p");
         Paragraph.id = "Error6";
         let Inhoud = document.createTextNode("Check this box");
@@ -133,82 +127,42 @@ function Validate(){
         document.getElementById("Policy").style.color = "#000";
     }
     /*Fixing height of box when errors display*/
-    if(FirstNameCheck !== true)
-    {
+    if (FirstNameCheck !== true) {
         HeightBox++
     }
-    if(LastNameCheck !== true)
-    {
+    if (LastNameCheck !== true) {
         HeightBox++
     }
-    if(EmailCheck !== true)
-    {
+    if (EmailCheck !== true) {
         HeightBox++
     }
-    if(PhoneCheck !== true)
-    {
+    if (PhoneCheck !== true) {
         HeightBox++
     }
-    if(MessageCheck !== true)
-    {
+    if (MessageCheck !== true) {
         HeightBox++
     }
-    if(CheckCheck !== true)
-    {
+    if (CheckCheck !== true) {
         HeightBox++
     }
-    if(HeightBox > 5){
+    if (HeightBox > 5) {
         document.getElementById("block_2").style.height = "auto";
         document.getElementById("block_1").style.height = "auto";
     }
-    console.log(LastNameCheck);
-    console.log(FirstNameCheck);
-    console.log(EmailCheck);
-    console.log(PhoneCheck);
-    console.log(MessageCheck);
-    console.log(CheckCheck);
     /*checking if all fields give true*/
-    if(LastNameCheck === true && FirstNameCheck === true && EmailCheck === true && PhoneCheck === true && MessageCheck === true && CheckCheck === true){
+    if (LastNameCheck === true && FirstNameCheck === true && EmailCheck === true && PhoneCheck === true && MessageCheck === true && CheckCheck === true) {
         return true;
     }
 }
-document.getElementById("sendbutton").addEventListener("click", SendMail);{
+
+document.getElementById("sendbutton").addEventListener("click", SendMail);
+{
 
 }
+
 function SendMail(){
     if(Validate()){
-        /*Hier moet de mailto of verzending van de message*/
-        /*removing of previous done messages*/
-        if(document.getElementById("valid") != null)
-        {
-            document.getElementById("valid").remove();
-        }
-        /*removing of previous errors*/
-        if(document.getElementById("Error1") != null)
-        {
-            document.getElementById("Error1").remove();
-        }
-        if(document.getElementById("Error2") != null)
-        {
-            document.getElementById("Error2").remove();
-        }
-        if(document.getElementById("Error3") != null)
-        {
-            document.getElementById("Error3").remove();
-        }
-        if(document.getElementById("Error4") != null)
-        {
-            document.getElementById("Error4").remove();
-        }
-        if(document.getElementById("Error5") != null)
-        {
-            document.getElementById("Error5").remove();
-        }
-        if(document.getElementById("Error6") != null)
-        {
-            document.getElementById("Error6").remove();
-        }
-
+        SendMessageDelete()
         let Paragraph = document.createElement("p");
         Paragraph.id = "valid";
         let Inhoud = document.createTextNode("Your message has been successfully sent");
