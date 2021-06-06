@@ -187,7 +187,7 @@ function Validate() {
     let LastNameCheck = ValidateLastName(LastName);
     DeleteThirdError();
     let EmailCheck = ValidateMail(Email, Mail);
-    DeleteFourthError()
+    DeleteFourthError();
     let PhoneCheck = ValidatePhone(Phone, PhoneNumber);
     DeleteFifthError();
     let MessageCheck = ValidateMessage(Message);
