@@ -1,7 +1,6 @@
 window.addEventListener('load', loadHandler);
 
 function loadHandler(){
-    document.getElementById("header-search-input").style.display = "none";
     document.getElementById("header-search-button").addEventListener("click", toggleSearchBar);
     document.getElementById("header-cart_button").addEventListener("click", updateShoppingCart);
     document.getElementById("saveShopItems").addEventListener("click", saveShoppingCart);
