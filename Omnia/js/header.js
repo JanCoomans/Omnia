@@ -20,7 +20,8 @@ function toggleSearchBar() {
 
     function redirect(){
         let input = document.getElementById("header-search-input").value;
-        document.location.href = "./" + input + ".html";
+        if (input.toLowerCase() === "index"){document.location.href = "../index.html";}
+        document.location.href = "./" + input.toLowerCase() + ".html";
     }
 }
 
@@ -142,7 +143,7 @@ function setSavedTotalCost(){
         let price = shoppingList["consoles"][key]["price"];
         totalCost += amount*price;
     }
-    costContainer.appendChild(document.createTextNode(` €${totalCost}`));
+    costContainer.appendChild(document.createTextNode(` €${totalCost.toFixed(2)}`));
 }
 
 function getTotalCost(shoppingList){
