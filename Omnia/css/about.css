@@ -1,0 +1,52 @@
+/*Dit is een testcomment please deleted*/
+
+/*copied style from index.html so that the header images are the same size and style
+  Jorne Janssens*/
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*changed it to "header img" from "img" so that it only selects the images in the header
+  Jorne Janssens*/
+header img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*edited height for the logo at the footer
+  Jorne Janssens*/
+footer #logo_footer {
+    width: 260px;
+    height: 72px;
+}
+
+/*fixed issue where webstorm gives a warning about the original image being 200px,
+  gave the image an id (logo_header) and moved it's "height=68px" to the contact.css instead.
+  Jorne Janssens*/
+#logo_header {
+    height: 68px;
+}
+
+#about {
+    min-height: 300px;
+    padding-top: 100px;
+}
+
+.line-decoration-horizontal{
+    padding: 1px 0 0 0;
+    width: 200px;
+ }
+
+.abouttext {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
