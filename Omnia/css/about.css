@@ -36,95 +36,17 @@ footer #logo_footer {
     height: 68px;
 }
 
-#block_1 {
-    background-image: url(../assets/img/building_background.webp);
-    background-size: cover;
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
-    margin-top: -100px;
-    width: 570px;
-    height: 705px;
-}
-
-#block_2 {
-    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
-    margin-top: -100px;
-    width: 570px;
-    height: 705px;
-}
-
 #about {
     min-height: 300px;
     padding-top: 100px;
 }
 
-#iconphone {
-    width: 40px;
-}
+.line-decoration-horizontal{
+    padding: 1px 0 0 0;
+    width: 200px;
+ }
 
-#iconlocation {
-    width: 40px;
-}
-
-#iconmail {
-    width: 50px;
-}
-
-/*This is for making the icons responsive in size
-   Jorne Janssens*/
-@media only screen and (max-width: 1200px) {
-    #iconphone {
-        width: 30px;
-        padding-top: 25px;
-    }
-
-    #iconlocation {
-        width: 30px;
-    }
-
-    #iconmail {
-        width: 40px;
-        padding-top: 10px
-    }
-
-    #block_2 {
-        margin-top: 0;
-    }
-
-    #block_1 {
-        margin-top: 0;
-    }
-}
-
-/*This is for making the mobile version 2nd block not clip over the 1st block
-  I also fixed an issue of the blocks not taking up 100% space at mobile format.
-   Jorne Janssens*/
-@media only screen and (max-width: 767px) {
-    #block_1 {
-        margin-top: -100px;
-        width: 100%;
-        height: 100%;
-    }
-    #block_2 {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/*This is to give the submit button a fixed width rather then a responsive width*/
-.btn-secondary {
-    width: 125px;
-}
-
-/*This makes Icons disappear on tinier phones
-  Jorne Janssens*/
-@media only screen and (max-width: 354px) {
-    #iconlocation{
-        display: none;
-    }
-    #iconphone{
-        display: none;
-    }
-    #iconmail{
-        display: none;
-    }
+.abouttext {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
