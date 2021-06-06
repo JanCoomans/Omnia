@@ -18,6 +18,10 @@ img{
     max-width: 100%;
 }
 
+#header-profile_button{
+    background-color: #1a2536;
+}
+
 .btn-omnia{
     background-color: #FCA311;
     color: black;
