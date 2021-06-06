@@ -10,7 +10,7 @@ function loadHandler(){
 
 function toggleSearchBar() {
     let item = document.getElementById("header-search-input");
-    if(item.style.display === "none"){
+    if(item.style.display !== "unset"){
         item.style.display = "unset";
     }
     else{
