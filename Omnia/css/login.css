@@ -17,6 +17,10 @@ img{
     max-width: 100%;
 }
 
+#titleContainer{
+    margin-bottom: 42px;
+}
+
 #block_1{
     background-image: url(../assets/img/SignInPicture.png);
     background-size: auto;
