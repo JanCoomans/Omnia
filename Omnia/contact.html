@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Dit is een testcomment please deleted-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
@@ -42,19 +41,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li id="header-first" class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./index.html">Home
-                                <span class="sr-only">(current)</span></a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold active" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item py-1">
                             <a class="nav-link float-right font-ubuntu font-weight-bold" href="./about.html">About</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold"
-                               href="./product.html">Product</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./product.html">Product</a>
                         </li>
                         <li class="nav-item py-1">
-                            <a class="nav-link float-right font-ubuntu font-weight-bold"
-                               href="./contact.html">Contact</a>
+                            <a class="nav-link float-right font-ubuntu font-weight-bold" href="./contact.html">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
@@ -105,10 +101,19 @@
             <div id="modalBody" class="modal-body">
                 <!-- Auto generate stuff. Don't worry about it. -->
             </div>
+            <div id="modalCheckout" class="bg-tertiary">
+                <div class="d-flex align-items-center">
+                    <div id="priceContainer" class="justify-content-center text-center pr-0">
+                        <h5 class="modalCheckoutItem font-oxygen">Total:<span id="totalCost"></span></h5>
+                    </div>
+                    <div id="checkoutButtonContainer" class="pl-0 float-right">
+                        <button type="button" class="btn btn-secondary float-right font-titillium-web modal-button modalCheckoutItem">Check out</button>
+                    </div>
+                </div>
+            </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button id="saveShopItems" type="button" class="btn btn-primary" data-dismiss="modal">Save changes
-                </button>
+                <button id="closeShopItems" type="button" class="btn btn-secondary font-titillium-web" data-dismiss="modal">Close</button>
+                <button id="saveShopItems" type="button" class="btn btn-primary font-titillium-web" data-dismiss="modal">Save changes</button>
             </div>
         </div>
     </div>
@@ -234,8 +239,8 @@
 
 <!--footer for the contact page copied from the index.html
     Jorne Janssens-->
-<footer class="pt-5">
-    <div id="footer-top" class="bg-primary">
+<footer>
+    <div id="footer-top" class="bg-primary font-titillium-web">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center"> <!--Left-->
@@ -247,26 +252,18 @@
                     </ul>
                 </div>
                 <div class="col-md-4 text-center"> <!--Middle-->
-                    <img id="footer-logo" class="mx-auto" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
+                    <img id="footer-logo" class="mx-auto mt-4" src="./assets/img/logo_gradient.png" alt="Logo OMNIA">
                     <ul id="social" class="p-0 mt-4">
-                        <li class="social-size"><a href="https://www.facebook.com/OmniaConsole" target="_blank"
-                                                   aria-hidden="true"><img src="assets/img/facebook.png"
-                                                                           alt="Facebook logo"></a></li>
-                        <li class="social-size"><a href="https://www.instagram.com/omnia_console/" target="_blank"
-                                                   aria-hidden="true"><img src="assets/img/instagram.png"
-                                                                           alt="Instagram logo"></a></li>
-                        <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg"
-                                                   target="_blank" aria-hidden="true"><img src="assets/img/youtube.png"
-                                                                                           alt="YouTube logo"></a></li>
+                        <li class="social-size"><a href="https://www.facebook.com/OmniaConsole" target="_blank" aria-hidden="true"><img src="assets/img/facebook.png" alt="Facebook logo"></a></li>
+                        <li class="social-size"><a href="https://www.instagram.com/omnia_console/" target="_blank" aria-hidden="true"><img src="assets/img/instagram.png" alt="Instagram logo"></a></li>
+                        <li class="social-size"><a href="https://www.youtube.com/channel/UCvBPsLSp2oaV3lnXPLc6RSg" target="_blank" aria-hidden="true"><img src="assets/img/youtube.png" alt="YouTube logo"></a></li>
                     </ul>
                     <div class="col bg-secondary mx-auto my-4 footer-line-decoration-verti"></div>
-                    <button onclick="location.href = './contact.html'" class="btn bg-secondary px-5 py-2" type="button">
-                        CONTACT
-                    </button>
+                    <button onclick="window.location.href='./contact.html'" class="font-titillium-web button btn btn-secondary px-5 py-2 mb-5" type="button">CONTACT</button>
                 </div>
                 <div class="col-md-4 text-center"> <!--Right-->
                     <div class="col bg-secondary mx-auto mt-5 my-3 footer-line-decoration-hori"></div>
-                    <ul class="list-unstyled mt-5">
+                    <ul class="list-unstyled my-5">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./index.html">About</a></li>
                         <li><a href="./product.html">Product</a></li>
@@ -276,12 +273,11 @@
             </div>
         </div>
     </div>
-    <div id="footer-bottom">
+    <div id="footer-bottom" class="bg-black text-white font-oxygen">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center mt-4">
-                    <p>© 2021 Omnia. All rights reserved.</p>
-                    <!--This footer caused me many baguette but it isn't bread -Robbe-->
+                <div class="col-md-12 text-center pb-2 pt-3">
+                    <p>© 2021 Omnia. All rights reserved.</p> <!--This footer caused me many baguette but it isn't bread -Robbe-->
                 </div>
             </div>
         </div>
