@@ -17,6 +17,10 @@ img{
     max-width: 100%;
 }
 
+#header-profile_button{
+    background-color: #1a2536;
+}
+
 #titleContainer{
     margin-bottom: 42px;
 }

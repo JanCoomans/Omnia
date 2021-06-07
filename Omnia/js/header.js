@@ -10,7 +10,7 @@ function loadHandler(){
 
 function toggleSearchBar() {
     let item = document.getElementById("header-search-input");
-    if(item.style.display === "none"){
+    if(item.style.display !== "unset"){
         item.style.display = "unset";
     }
     else{
@@ -44,8 +44,8 @@ function updateShoppingCart(){
         for (let key in shoppingList["consoles"]){
             if (shoppingList["consoles"][key]["count"] > 0){
                 generateSection(shoppingList["consoles"][key], key, "console", index);
-                index++;
             }
+            index++;
         }
         console.log(`Consoles loaded from shopping list.`);
     }
@@ -200,6 +200,7 @@ function changeCount(index, price, change){
 
 function saveShoppingCart(){ // Games not implemented.
     let shoppingList = JSON.parse(localStorage.shoppingList);
+
     let consoles = shoppingList["consoles"];
     let productCounters = document.querySelectorAll('*[id^="productCount-"]');
     for (let index = 0; index < productCounters.length; index++){
