@@ -5,7 +5,9 @@ function loadHandler(){
     document.getElementById("header-cart_button").addEventListener("click", updateShoppingCart);
     document.getElementById("saveShopItems").addEventListener("click", saveShoppingCart);
 
-    updateShoppingCartLabel();
+    if (typeof localStorage.shoppingList === "string"){
+        updateShoppingCartLabel();
+    }
 }
 
 function toggleSearchBar() {
