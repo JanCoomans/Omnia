@@ -1,74 +1,64 @@
-let klanten = [
-    {naam:'Soons',voornaam:'Nick',email:'Nick.Soons@omnia-console.com', password:'NS1112'},
-    {naam: "Janssens", voornaam: "Jorne", email: "Jorne.Janssens@omnia-console.com", password: "JJ1806"},
-    {naam: "Siongers", voornaam: "Robbe", email: "Robbe.Siongers@omnia-console.com", password: "RS3006"},
-    {naam: "Coomans", voornaam: "Jan", email: "Jan.Coomans@omnia-console.com", password: "JC2004"},
-    {naam: "Nenczl", voornaam: "Alexanader", email: "Alexander.Nenczl@omnia-console.com", password: "AN0708"}
-];
+window.addEventListener('load', loadHandler);
 
-document.getElementById("login").addEventListener("click", controleAccount);
+function loadHandler(){
+    let customers = [
+        {naam:'Soons',voornaam:'Nick',email:'Nick.Soons@omnia-console.com', password:'NS1112'},
+        {naam: "Janssens", voornaam: "Jorne", email: "Jorne.Janssens@omnia-console.com", password: "JJ1806"},
+        {naam: "Siongers", voornaam: "Robbe", email: "Robbe.Siongers@omnia-console.com", password: "RS3006"},
+        {naam: "Coomans", voornaam: "Jan", email: "Jan.Coomans@omnia-console.com", password: "JC2004"},
+        {naam: "Nenczl", voornaam: "Alexanader", email: "Alexander.Nenczl@omnia-console.com", password: "AN0708"}
+    ];
 
-function controleAccount(){
-    let gebruikersnaam = document.getElementById("emailAdress").value;
-    let password = document.getElementById("password").value;
+    document.getElementById("login").addEventListener("click", login);
 
-    console.log(gebruikersnaam);
-    console.log(password);
-
-    for (let teller = 0; klanten[teller] < teller; teller++){
-        if (klanten[teller].email === gebruikersnaam && klanten[teller].password === password){
-            console.log("Succes");
-            redirect();
-            alert("Welkom " + klanten[teller].naam);
-        }
-        else {
-            console.log("Failure");
+    function login(){
+        console.log("login");
+        if (isAccountValid()){
+            redirect()
         }
     }
 
+    function isAccountValid(){
+        console.log("isAccountValid");
+        let email = document.getElementById("emailAdress").value;
+        let password = document.getElementById("password").value;
+
+        if (isInputNull(email, password)){
+            return null;
+        }
+
+        for (let counter = 0; counter < customers.length; counter++) {
+            let person = customers[counter];
+            if (person.email === email && person.password === password){
+                return true;
+            }
+        }
+        showErrorInputInvalid();
+    }
+
+    function isInputNull(email, password){
+        if (email === "" || email === null || password === "" || password === null){
+            showErrorEmptyInput();
+            return true;
+        }
+        return false;
+    }
+
+    function showErrorEmptyInput(){
+        let errorMessage = "Please Fill All Required Fields";
+        alert(errorMessage);
+    }
+
+    function showErrorInputInvalid(){
+        let errorMessage = "Mail or Password is incorrect.";
+        alert(errorMessage);
+    }
+
     function redirect(){
-        let input = document.getElementById("header-search-input").value;
         document.location.href = "./index.html";
     }
-
-    // if (klanten.email === gebruikersnaam && klanten.password === password){
-    //     console.log("Succes");
-    // }
-    // else {
-    //     console.log("Failure");
-    // }
-    // if (gebruikersnaam === klanten.email){
-    //     console.log("email is oke")
-    // }
-    // else{
-    //     console.log("email is niet oke")
-    // }
-    // if (password === klanten.password){
-    //     console.log("password is oke")
-    // }
-    // else{
-    //     console.log("password is niet oke")
-    // }
 }
 
 
-document.getElementById("header-search-input").style.display = "none";
-document.getElementById("header-search-button").addEventListener("click", toggleSearchBar);
-
-
-function toggleSearchBar() {
-    let item = document.getElementById("header-search-input");
-    if(item.style.display === "none"){
-        item.style.display = "unset";
-    }
-    else{
-        redirect()
-    }
-
-    function redirect(){
-        let input = document.getElementById("header-search-input").value;
-        document.location.href = "./" + input + ".html";
-    }
-}
 
 
