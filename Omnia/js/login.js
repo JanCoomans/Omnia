@@ -7,6 +7,7 @@ let klanten = [
 ];
 
 document.getElementById("login").addEventListener("click", controleAccount);
+
 function controleAccount(){
     let gebruikersnaam = document.getElementById("emailAdress").value;
     let password = document.getElementById("password").value;
@@ -14,26 +15,40 @@ function controleAccount(){
     console.log(gebruikersnaam);
     console.log(password);
 
-        // if (klanten.email === gebruikersnaam && klanten.password === password){
-        //     console.log("Succes");
-        // }
-        // else {
-        //     console.log("Failure");
-        // }
-    if (gebruikersnaam === klanten.email){
-        console.log("email is oke")
-    }
-    else{
-        console.log("email is niet oke")
-    }
-    if (password === klanten.password){
-        console.log("password is oke")
-    }
-    else{
-        console.log("password is niet oke")
+    for (let teller = 0; klanten[teller] < teller; teller++){
+        if (klanten[teller].email === gebruikersnaam && klanten[teller].password === password){
+            console.log("Succes");
+            redirect();
+            alert("Welkom " + klanten[teller].naam);
+        }
+        else {
+            console.log("Failure");
+        }
     }
 
+    function redirect(){
+        let input = document.getElementById("header-search-input").value;
+        document.location.href = "./index.html";
+    }
 
+    // if (klanten.email === gebruikersnaam && klanten.password === password){
+    //     console.log("Succes");
+    // }
+    // else {
+    //     console.log("Failure");
+    // }
+    // if (gebruikersnaam === klanten.email){
+    //     console.log("email is oke")
+    // }
+    // else{
+    //     console.log("email is niet oke")
+    // }
+    // if (password === klanten.password){
+    //     console.log("password is oke")
+    // }
+    // else{
+    //     console.log("password is niet oke")
+    // }
 }
 
 

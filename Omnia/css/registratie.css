@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1A2536;
-    color: white;
 }
 
 div{
@@ -22,13 +21,8 @@ img{
     background-color: #1a2536;
 }
 
-.btn-omnia{
-    background-color: #FCA311;
-    color: black;
-}
-
-.emailLabel{
-    color: black;
+#titleContainer{
+    margin-bottom: 42px;
 }
 
 #block_1{
@@ -45,20 +39,11 @@ img{
     width: 570px;
     height: 705px;
 }
-label{
-    color: black;
-}
-#text{
-    color: black;
-}
-.font-titillium-web{
-    font-family: titillium-web;
+
+#login{
+    width: 127px;
 }
 
-.font-oxygen{
-    font-family: oxygen;
-}
-
-.font-comfortaa{
-    font-family: 'Comfortaa', cursive;
+.font-size-small{
+    font-size: 12px;
 }
